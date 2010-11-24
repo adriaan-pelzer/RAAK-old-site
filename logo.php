@@ -652,7 +652,7 @@ if (in_array ('upload_agree', $error)) {
 }
 ?>
                             <div id="whitebox_secondary_body_submit_agree">
-                                <label for="upload_agree">I agree to the <a href="">terms & conditions</a></label>
+                            <label for="upload_agree">I agree to the <a href="<?php bloginfo ('url'); ?>/logo-project/terms-and-conditions/">terms & conditions</a></label>
                                 <input id="upload_agree" name="upload_agree" type="checkbox" />
                                 <input name="upload_submit" type="submit" value="Submit &#9658;" />
                             </div>
