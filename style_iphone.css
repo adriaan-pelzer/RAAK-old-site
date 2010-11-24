@@ -1,0 +1,63 @@
+#wrapper {
+    -webkit-text-size-adjust: 100%;
+}
+
+#blog-description {
+    /*width: 43%;*/
+}
+
+#menu ul li.page_item div.topmenu_body {
+    padding: 0px 7%;
+}
+
+#header {
+    position: relative;
+}
+
+#access {
+    position: absolute;
+    right: 0px;
+}
+
+#footer {
+    position: relative;
+    text-align: right;
+}
+
+#footer_copyright {
+    width: 100px;
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+    text-align: left;
+}
+
+.whitebox_primary_body_nav, #whitebox_big_body_search {
+    margin-left: 0;
+    float: right;
+    margin-top: 16px;
+}
+
+#whitebox_big_body_search {
+    margin-top: -4px;
+}
+
+.whitebox_primary_body_footer {
+    text-align: right;
+    position: relative;
+}
+
+#whitebox_primary_body_footer_archive {
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+}
+
+#bluebox_home {
+    position: relative;
+    left: 4px;
+}
+
+#bluebox_home_bottom {
+    margin-top: -1px;
+}

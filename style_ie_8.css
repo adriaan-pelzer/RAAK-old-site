@@ -1,0 +1,40 @@
+#blog-description {
+    width: 378px;                                       /*IE specific*/
+}
+
+#footer_copyright {
+    margin-right: 485px;                    
+}
+
+body.page-template-home-php #bluebox {
+    margin-top: 10px;
+}
+
+body.s-category-blog div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_bottom {
+    margin-top: 0px;
+}
+
+.bluebox_body_nav_item {
+    padding: 0 5px;
+}
+
+.whitebox_big_body_nav_item {
+    padding: 0 12px;
+}
+
+.opengraphprotocoltools-div {
+    margin-left: 81px!important;
+}
+
+
+div#twitter_wessel #twitter_body .twtr-widget-profile h3, div#twitter_gerrie #twitter_body .twtr-widget-profile h3, div#twitter_adriaan #twitter_body .twtr-widget-profile h3, div#twitter #twitter_body .twtr-widget-profile h3 {
+    width: 160px!important;
+}
+
+#whitebox_primary_body_brief .whitebox_primary_body_section_title, #whitebox_primary_body_solution .whitebox_primary_body_section_title {
+    padding-top: 0;
+}
+
+#access {
+    margin-left: 54px;                                  /*IE specific*/
+}

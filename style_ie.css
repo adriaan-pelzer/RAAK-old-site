@@ -1,0 +1,239 @@
+/*body.page-template-home-php #bluebox {
+    margin-top: -142px;
+}*/
+
+.logo_letter {
+    display: inline-block;
+}
+
+
+* {
+    border: 0;              /*IE specific*/
+}
+
+, body.s-category-raak-projects #whitebox_big_body_title {
+    margin-bottom: -13px;
+}
+
+@font-face {
+ font-family: din_schrift;
+ src: url(fonts/DINMittelschrift.eot); /* EOT file for IE */
+}
+
+@font-face {
+ font-family: arial_narrow;
+ src: url(fonts/Arial_Narrow.eot); /* EOT file for IE */
+}
+
+#blog-description {
+    width: 384px;
+}
+
+#access {
+    margin-left: 55px;                                  /*IE specific*/
+}
+
+
+#mailchimp_body {                                   /*IE only*/
+    padding-top: 15px;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div.mc-field-group input {
+    width: 153px!important;                                                 /*IE specific*/
+}
+
+.mc-field-group {
+    padding-top: 13px!important;
+}
+
+.mc-field-group label {
+    font-family: arial, sans-serif!important;
+    letter-spacing: 1px;
+}
+
+
+.twtr-widget-profile h3 {
+    letter-spacing: 1px;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset legend {
+   /* margin-left: 16px!important;*/                                            /*IE specific*/
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div.indicate-required {
+    margin-top: 10px!important;                                         /*IE only*/
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div input#mc-embedded-subscribe {
+    margin: 0 auto 0 96px!important;
+    padding: 1px 8px!important;
+    border: 1px solid #cccccc;
+}
+
+div#twtr-widget-1 div.twtr-doc div.twtr-bd div.twtr-timeline div.twtr-tweets div.twtr-tweet {
+    background-color: transparent!important;                                /*IE only*/
+}
+
+#footer_copyright {
+    margin-right: 457px;
+}
+
+/*.whitebox_primary_body_content_nav {
+    margin-left: 51px;                              
+}*/
+
+.whitebox_primary_body_content_founder_social_title {
+    margin-right: 7px;                              /*IE specific*/
+}
+
+.whitebox_primary_body_content_founder_social_linkedin a img, .whitebox_primary_body_content_founder_social_facebook a img, .whitebox_primary_body_content_founder_social_twitter a img {
+    border: 0;                                  /*IE only*/
+}
+
+/*.whitebox_big_body_nav {
+    margin-left: 302px;                         
+}*/
+
+.whitebox_big_body_category_page {
+    background: url(images/right_arrow.png) no-repeat right 20%;                /*IE specific*/
+}
+
+.whitebox_big_body_category_body_entry_body a div img {                 /*IE only*/
+    border: 0;
+}
+
+/*body.page-template-blog-php div#wrapper div#container div#content div#bluebox {
+    margin-top: -320px;
+}
+
+span#whitebox_primary_body_attr_comments {
+    position: relative;
+    top: -6px;
+}*/
+
+/*body.page-template-blog-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content {
+    margin-top: -10px;
+}*/
+
+/*body.page-template-blog-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_footer {
+    margin-top: -320px;
+}*/
+
+span#whitebox_primary_body_footer_archive {
+    margin-right: 170px;
+}
+
+/*body.page-template-blog-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_bottom {
+    margin-top: -340px;
+}*/
+
+
+body.page-template-blog-php div#wrapper div#container {
+    position: relative;
+}
+
+/*body.page-template-blog-php div#wrapper div#container div#primary {
+    margin-left: -84px;
+}
+
+body.page-template-blog-php div#wrapper div#footer {
+    margin-top: -330px;
+}*/
+
+.whitebox_primary_body_attr div {
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+
+/*.whitebox_primary_body_attr div#whitebox_primary_body_attr_comment {
+    margin-bottom: -20px;
+}*/
+
+
+.whitebox_primary_body_attr div#whitebox_primary_body_attr_comment span#whitebox_primary_body_attr_commenticon img {
+    margin-right: 6px;
+    vertical-align: 12%;
+
+}
+
+body.s-category-blog div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content {
+    margin-top: 10px;
+}
+
+/*body.s-category-blog div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_bottom {
+    margin-top: -20px;
+}*/
+
+body.page-template-contact-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content div form p span input{
+    width: 219px;
+}
+
+body.page-template-contact-php div#wrapper div#container div#content div#bluebox div#bluebox_body div#bluebox_body_title span#bluebox_body_title_print {
+    display: inline-block;
+    margin-left: 201px;
+}
+
+
+div#twtr-widget-1 div.twtr-doc div.twtr-bd div.twtr-timeline div.twtr-tweets div.twtr-tweet,
+div#twtr-widget-2 div.twtr-doc div.twtr-bd div.twtr-timeline div.twtr-tweets div.twtr-tweet,
+div#twtr-widget-3 div.twtr-doc div.twtr-bd div.twtr-timeline div.twtr-tweets div.twtr-tweet,
+div#twtr-widget-4 div.twtr-doc div.twtr-bd div.twtr-timeline div.twtr-tweets div.twtr-tweet {
+    background-color: transparent!important;
+}
+
+form#commentform div.form-label label[for="comment"] {
+    vertical-align: 135px;
+}
+
+body.pageid-1894 #whitebox_big_body_search {
+    margin-left: 297px;
+    vertical-align: 20%;
+}
+
+body.page-template-blog-php #whitebox_big_body_search  {
+    vertical-align: 20%;
+}
+
+ body.page-template-blog-php #whitebox_big_body_search a {
+     vertical-align: -25%;
+ }
+
+body.pageid-1894 #whitebox_big_body_search a {
+    vertical-align: -25%;
+}
+
+body.four04 #whitebox_big_body_search {
+    margin-left: 142px;
+    vertical-align: top;
+}
+
+body.four04 #whitebox_big_body_search a {
+    vertical-align: -20%;
+}
+
+.twitter-share-button {
+    width: 98px!important;
+}
+
+.opengraphprotocoltools-div {
+    width: 98px;
+    margin-left: 77px!important;
+}
+
+
+.bluebox_body_nav_item {
+    padding: 0 8px;
+}
+
+.whitebox_big_body_nav_item {
+    padding: 0 14px;
+}
+
+#whitebox_secondary_body_submit input#upload_agree {
+    border: 0;
+    vertical-align: -20%;
+}
+
+#whitebox_secondary_body_submit label[for="upload_file"] {
+    vertical-align: 70%;
+}

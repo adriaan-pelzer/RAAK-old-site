@@ -1,0 +1,14 @@
+#access {
+    vertical-align: 100%;
+}
+#blog-title {
+    margin-bottom: -4px;
+}
+
+#whitebox_secondary_body_submit input#upload_agree {
+    vertical-align: baseline;
+}
+
+#preview_letter_R, #preview_letter_A1, #preview_letter_A2, #preview_letter_K {
+    height: 40px;
+}

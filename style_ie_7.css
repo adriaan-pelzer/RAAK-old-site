@@ -1,0 +1,545 @@
+#blog-description, 
+#access, 
+#content, 
+#logox_counter, 
+#bluebox_home, 
+#bluebox, 
+.bluebox_body_nav_item, 
+.bluebox_body_content_sub_title, 
+.bluebox_body_content_sub_text, 
+.bluebox_body_content_sub_text, 
+.bluebox_body_content_link a, 
+#whitebox_primary, 
+#whitebox_primary_body_attr_comment_icon, 
+#whitebox_secondary, 
+#whitebox_secondary_body_content_one_footer a, 
+#whitebox_secondary_body_content_two_footer a, 
+#whitebox_secondary_body_content_three_footer a, 
+#whitebox_secondary_body_content_two, 
+#whitebox_secondary_body_content_three, 
+div#primary, 
+#footer_copyright, 
+body.page-template-about-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div#whitebox_primary_body_title, 
+.whitebox_primary_body_nav, 
+.whitebox_primary_body_content_founder_info, 
+.whitebox_primary_body_content_founder_picture, 
+.whitebox_big_body_category_body_entry, 
+#whitebox_big_body_title, 
+.whitebox_big_body_nav, 
+#whitebox_big_body_search, 
+.whitebox_primary_body_attr span, 
+.whitebox_primary_body_attr span.seperator, 
+.whitebox_primary_body_footer span.seperator, 
+div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content div.whitebox_primary_body_content_left,  
+div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content div.whitebox_primary_body_content_right, 
+#whitebox_primary_body_footer_archive, 
+#bluebox_body_worthalook, 
+#bluebox_body_inspiration, 
+.whitebox_secondary_tab, 
+#bluebox_body_left_top, 
+#bluebox_body_left_bottom, 
+#bluebox_body_right_top, 
+#bluebox_body_right_bottom, 
+body.s-category-blog div#wrapper div#container div#content div#bluebox div#bluebox_body hr, 
+body.single div#wrapper div#container div#content div#bluebox div#bluebox_body hr,
+#bluebox_body_left_top, #bluebox_body_left_bottom, #bluebox_body_right_top, #bluebox_body_right_bottom,
+body.s-category-blog div#wrapper div#container div#content div#bluebox div#bluebox_body hr,
+body.single div#wrapper div#container div#content div#bluebox div#bluebox_body hr,
+form#commentform div.form-label, form#commentform div.form-input, form#commentform div.form-textarea,
+#file_replace,
+#whitebox_secondary_body_submit input,
+#whitebox_secondary_body_submit label,
+.page-template-logo-php #bluebox_body_left_top,
+.page-template-logo-php #bluebox_body_center_top,
+.page-template-logo-php #bluebox_body_right_top,
+.page-template-logo-php #bluebox_body_left_bottom,
+.page-template-logo-php #bluebox_body_center_bottom,
+.page-template-logo-php #bluebox_body_right_bottom,
+#dummy_file_text,
+.bluebox_big_body_content_row_item,
+.logo_letter, .single .whitebox_primary_body_attr, .single .whitebox_primary_body_share {
+    zoom: 1!important;
+    display: inline!important;
+}
+
+
+#access {
+    margin-left: 57px;
+}
+
+
+#logox_counter_top {
+    padding-top: 12px;
+}
+
+#logox_counter_number {
+    padding-bottom: 0;
+}
+
+#logox_counter_body a, #logox_counter_bottom {
+    padding: 0;
+}
+
+#bluebox_home_body_header {
+    margin-bottom: 0px;
+    margin-top: -3px;
+}
+
+#bluebox_home_body hr {
+    margin-bottom: 0;
+}
+
+#bluebox_home_body_content {
+    margin-top: -1px!important;
+    line-height: 18px;
+    padding-bottom: 3px;
+}
+
+.page-template-home-php #bluebox {
+    margin-top: -145px!important;
+    position: relative;
+    left: -3px;
+}
+
+.bluebox_body_content_link a  {
+    background-position-y: 50%;
+}
+
+#whitebox_secondary_body_content_one_footer a, #whitebox_secondary_body_content_two_footer a, #whitebox_secondary_body_content_three_footer a {
+    background-position-y: 30%;
+}
+
+#bluebox_bottom {
+    width: 348px;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset legend {
+    left: -5px;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div.indicate-required {
+    padding-top: 30px!important;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div input.required {
+    width: 135px!important;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div input#mc-embedded-subscribe {
+  margin-left: 54px!important; 
+}
+
+body.page-template-about-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div#whitebox_primary_body_title {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+body.page-template-about-php div#wrapper div#container div#content div#bluebox  {
+    margin-top: 8px!important;
+}
+
+body.page-template-about-php div#wrapper div#container div#content {
+    margin-bottom: 10px;
+}
+
+.whitebox_big_body_category_body_entry {
+    margin-right: 1px;
+}
+
+.whitebox_big_body_category_body_entry_title {
+    margin-bottom: -5px;
+}
+
+.whitebox_big_body_category_body_entry_body {
+    margin-top: -3px;
+}
+
+.whitebox_big_body_nav {
+    margin-top: -22px;
+}
+
+body.single div#wrapper div#container div#content div#bluebox div#bluebox_body {
+    padding-bottom: 2px;
+}
+
+div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div#whitebox_primary_body_post div.whitebox_primary_body_attr span#whitebox_primary_boddy_attr_commenticon {
+    width: 10px;
+    height: 14px;
+}
+
+div#whitebox_primary_bottom {
+    margin-top: 0;
+}
+
+/*body.page-template-blog-php div#wrapper div#container div#primary div#mailchimp div#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset {
+    left: 84px!important;
+}
+
+
+body.page-template-blog-php div#wrapper div#container div#primary {
+    left: 84px!important;
+}*/
+
+body.page-template-blog-php div#wrapper div#container div#primary div#mailchimp div#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div.mc-field-group label {
+    margin-left: 10px!important;
+}
+
+body.page-template-blog-php div#wrapper div#container div#content div#bluebox {
+    margin-top: 20px;
+}
+
+/*#whitebox_primary_body_attr_comments {
+    vertical-align: -6px;
+}*/
+
+body.page-template-blog-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_footer {
+    margin-top: 0px;
+}
+
+body.page-template-blog-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_bottom,
+body.page-template-blog-php div#wrapper div#container div#content div#bluebox div#bluebox_bottom,
+body.page-template-blog_archive-php #bluebox_bottom,
+body.page-template-contact-php #bluebox_bottom,
+body.author #bluebox_bottom,
+body.tag #bluebox_bottom,
+body.pageid-1894 #bluebox_bottom,
+body.page-template-about-php div#wrapper div#container div#content div#bluebox div#bluebox_bottom,
+body.single div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_bottom {
+    margin-top: -6px;
+}
+
+body.single #bluebox_bottom {
+    margin-top: -8px;
+}
+
+body.page-template-contact-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body {
+    margin-top: -5px;
+}
+
+body.page-template-contact-php #bluebox {
+    margin-top: 10px!important;
+}
+
+#primary {
+    margin-top: 4px!important;
+}
+
+#bluebox_home_body {
+    position: relative;
+    z-index: 9;
+}
+
+body.page-template-home-php div#wrapper div#container div#content div#bluebox div#bluebox_body {
+    position: relative;
+    z-index: 1;
+}
+
+.whitebox_primary_body_content_founder_social_linkedin {
+    margin-top: 0px;
+}
+
+form#commentform div.form-submit {
+    margin-left: 100px;
+    padding: 4px 0 12px 0;
+}
+
+form#commentform div.form-label {
+    vertical-align: top;
+}
+
+li.page_item {
+    text-align: left!important;
+}
+
+#blog-description {
+    width: 378px;
+}
+
+body.page-template-about-php #bluebox_body_nav {
+    margin-bottom: 7px!important;
+}
+
+/*body.page-template-blog-php #bluebox, body.page-template-blog_archive-php #bluebox, body.author #bluebox, body.tag #bluebox, body.pageid-1894 #bluebox {
+    margin-top: 20px!important;
+}*/
+
+body.page-template-blog_archive-php #bluebox_body a, body.author #bluebox_body a, body.tag #bluebox_body a {
+    line-height: 25px;
+}
+
+body.page-template-blog-php #whitebox_big_body_title, body.pageid-1894 #whitebox_big_body_title {
+    vertical-align: 20%;
+}
+
+body.page-template-blog-php #whitebox_big_body_search a, body.pageid-1894 #whitebox_big_body_search a {
+    vertical-align: 80%;
+}
+
+#footer_copyright {
+    margin-right: 485px;
+}
+
+body.page-template-blog-php #bluebox, body.author #bluebox, body.tag #bluebox, body.pageid-1894 #bluebox {
+    margin-bottom: 0!important;
+}
+
+body.pageid-1894 #bluebox_top {
+    display: none;
+}
+
+
+body.pageid-1894 #whitebox_big_body_search, body.page-template-blog-php #whitebox_big_body_search {
+    vertical-align: 0%;
+}
+
+body.page-template-contact-php #bluebox_body_title {
+    margin: 0!important;
+}
+
+/*body.single div#wrapper div#container div#content div#bluebox {
+    margin-top: 20px!important;
+}*/
+
+.single #whitebox_big_body_title {
+    vertical-align: top;
+}
+
+.category #bluebox_bottom {
+    margin-top: -10px;
+}
+
+.category #whitebox_secondary {
+    margin-top: 0px;
+}
+
+body.page-template-blog_archive-php #whitebox_secondary, 
+body.archive #whitebox_secondary,
+body.tag #whitebox_secondary,
+body.four04 #whitebox_secondary,
+body.pageid-1894 #whitebox_secondary {
+    display: block!important;
+    margin-left: 412px!important;
+}
+
+.single #bluebox_body hr {
+    display: inline;
+}
+
+.bluebox_body_nav_item {
+    padding: 0 7px;
+}
+
+#bluebox_body_nav_consulting, #bluebox_body_nav_social-media-ready {
+	float: none;
+}
+
+.whitebox_big_body_nav_item {
+    padding: 0 12px;
+}
+
+#hrleft, #hrright {
+    position: relative;
+}
+
+#hrleft {
+    left: -80px;
+}
+
+#hrright {
+    left: 80px;
+    top: -17px;
+}
+
+.single .whitebox_secondary_tab_body, .page-template-blog-php .whitebox_secondary_tab_body {
+    padding-top: 2px;
+    height: 28px;
+}
+
+body.single h2.subTitle {
+    line-height: 24px;
+}
+
+.postid-914 .whitebox_primary_body_content p a img {
+    display: block;
+}
+
+.postid-876 .whitebox_primary_body_content div object {
+    width: 360px;
+}
+
+.postid-829 .whitebox_primary_body_content p object,  
+.postid-307 .whitebox_primary_body_content p object,  
+.postid-64 .whitebox_primary_body_content p object,  
+.postid-144 .whitebox_primary_body_content p object,  
+.postid-81 .whitebox_primary_body_content p embed,  
+.postid-604 .whitebox_primary_body_content p object {  
+    width: 360px!important;
+}
+
+#primary {
+	margin-top: 10px!important;
+}
+
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div.mc-field-group input {
+    width: 160px!important;                                                 /*IE specific*/
+    margin-left: 10px!important;
+}
+
+.mc-field-group label {
+	margin-left: 10px!important;
+}
+#mailchimp_body div#mc_embed_signup form#mc-embedded-subscribe-form fieldset div.mc-field-group {
+    margin: 0!important; 
+    padding: 0!important;
+    position: relative;
+    top: 43px;
+}
+
+#mc-embedded-subscribe-container {
+	position: relative;
+	top: 30px;
+}
+
+#twitter_top a {
+	display: inline-block;
+	margin-top: 0;
+}
+
+.twtr-hd h3 {
+	top: -5px!important;
+	width: 160px!important;
+	line-height: 18px!important;
+}
+
+.twtr-hd {
+	height: 18px;
+}
+
+.twtr-tweet-text p {
+	font-size: 11px!important;
+}
+
+
+body.s-category-raak-projects #whitebox_big_body_title, body.page-template-work-php #whitebox_big_body_title {
+    margin-bottom: 5px;
+}
+
+.archive #whitebox_primary_body_content {
+	margin-bottom: 0!important;
+}
+
+.archive .whitebox_primary_body_attr {
+	margin-top: 0!important;
+}
+
+#mce-responses {
+	top: 0!important;
+	margin: 50px 10px -100px!important;
+}
+
+#mce-error-response, #mce-success-response {
+	position: relative;
+}
+
+fieldset div#mc-embedded-subscribe-container input#mc-embedded-subscribe {
+	margin: 0!important;
+	width:78px!important;
+	position: relative;
+	left: -64px;
+}
+
+#menu {
+	width: 549px!important;
+}
+
+#logox_counter_body a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.page-template-logo-php #bluebox_body_title {
+    margin: 12px 0 -2px;
+}
+
+.page-template-logo-php #bluebox_body_nav {
+    margin: 0px 0 -4px;
+}
+
+.page-template-logo-php #bluebox_body .solid {
+    margin-bottom: 3px;
+}
+
+.page-template-logo-php #whitebox_primary_body h1 {
+    margin-top: 0;
+}
+.page-template-logo-php #bluebox_bottom {
+    margin-top: -6px;
+}
+
+.page-template-logo-php #whitebox_secondary_top {
+    width: 348px;
+}
+
+#whitebox_secondary_tabs_finish {
+    margin-top: -30px;
+}
+
+#whitebox_secondary_tabs_submit, #whitebox_secondary_tabs_preview {
+    margin-left: 5px;
+}
+
+#whitebox_secondary_body_submit_agree label:first-child {
+    width: 179px;
+}
+
+#whitebox_secondary_body_submit_agree {
+    height: 26px;
+    vertical-align: middle;
+}
+
+#whitebox_secondary_body_submit input#upload_agree {
+    vertical-align: middle;
+}
+
+.page-template-logo-php #bluebox_bottom {
+    margin-bottom: 0;
+}
+
+#file_replace {
+    position: relative;
+}
+
+#dummy_file_text {
+    position: absolute;
+    left: 27px;
+}
+
+#whitebox_secondary_body_submit_file label {
+    height: 10px;
+    padding: 8px 0px 7px;
+    vertical-align: top;
+}
+
+
+#preview_letter_R, #preview_letter_A1, #preview_letter_A2, #preview_letter_K {
+    position: relative;
+    top: 2px;
+}
+
+#bluebox_big {
+    margin-top: 10px;
+}
+
+#bluebox_big_body {
+    margin-top: -5px;
+}
+
+#bluebox_big_body_nav {
+    margin-top: -20px;
+}
+
+#whitebox_secondary_body_preview_submit input {
+    width: 60%;
+}
+
