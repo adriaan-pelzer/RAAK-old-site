@@ -78,7 +78,7 @@ if (isset ($_POST['upload_submit'])) {
             array_push ($error, 'upload_file_dim');
         } else {
             $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
-            if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], get_bloginfo ('template_directory')."/logo_uploads/".$filename))) {
+            if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
                 array_push ($error, 'upload_file_copy');
             } else {
                 $uploaded_file = $filename;
