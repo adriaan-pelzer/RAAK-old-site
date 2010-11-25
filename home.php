@@ -116,7 +116,7 @@ foreach ($uploads as $upload) {
                 <div id="logox_counter_number"><?php echo $lettercount['R']*$lettercount['A']*$lettercount['A']*$lettercount['K']; ?></div>
                 <div id="logox_counter_body">
                     <hr />
-                    <a href="<?php echo get_bloginfo ('url'); ?>/2009/07/the-story-behind-our-crowd-sourced-raak-logo/">Read the story behind our logo</a>
+                    <a href="<?php echo get_bloginfo ('url'); ?>/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">Read the story behind our logo</a>
                     <hr />
                 </div>
                 <div id="logox_counter_bottom"><a href="<?php echo get_bloginfo ('template_directory'); ?>/logo-project/">Upload a letter</a></div>
