@@ -292,7 +292,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
 
             $("#letter_R a").click ( function () {
                 $("#letter_R a img").fadeTo ('fast', 1, function () {
-                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.5, function () {
+                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.3, function () {
                         $("#upload_letter").val ('R');
                     });
                 });
@@ -300,7 +300,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
 
             $("#letter_A a").click ( function () {
                 $("#letter_A a img").fadeTo ('fast', 1, function () {
-                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.5, function () {
+                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.3, function () {
                         $("#upload_letter").val ('A');
                     });
                 });
@@ -309,7 +309,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
 
             $("#letter_K a").click ( function () {
                 $("#letter_K a img").fadeTo ('fast', 1, function () {
-                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.5, function () {
+                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.3, function () {
                         $("#upload_letter").val ('K');
                     });
                 });
