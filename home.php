@@ -96,7 +96,7 @@ foreach ($work_categories as $c) {
         <div id="container_top"></div>
 		<div id="content">
             <div id="logox_counter">
-                <div id="logox_counter_top">CURRENT LOGO COMBINATIONS</div>
+                <div id="logox_counter_top"># OF LOGO COMBINATIONS</div>
 <?php
 global $wpdb;
 
