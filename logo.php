@@ -78,7 +78,7 @@ if (isset ($_POST['upload_submit'])) {
             array_push ($error, 'upload_file_dim');
         } else {
             $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
-            if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/sandbox/logo_uploads/".$filename))) {
+            if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
                 array_push ($error, 'upload_file_copy');
             } else {
                 $uploaded_file = $filename;
@@ -682,7 +682,7 @@ foreach (array ('R'=>'ar.jpg', 'A'=>'ay1.jpg', 'A2'=>'ay1.jpg', 'K'=>'kay.jpg') 
 <?php
     } else if (sizeof ($letters[$letter]) == 0) {
 ?>
-                                <span id="preview_letter_<?php echo $displayletter; ?>"><img alt="<?php echo $letter; ?>" src="<?php echo get_bloginfo('template_directory'); ?>/resize.php?filename=logo_uploads/<?php echo $default; ?>&width=70&height=82" /></span>
+                                <span id="preview_letter_<?php echo $displayletter; ?>"><img alt="<?php echo $letter; ?>" src="<?php echo get_bloginfo('template_directory'); ?>/resize.php?filename=images/<?php echo $default; ?>&width=70&height=82" /></span>
 <?php
     } else {
         $random_index = rand (0, (sizeof ($letters[$letter]) - 1));
