@@ -96,7 +96,7 @@ foreach ($work_categories as $c) {
         <div id="container_top"></div>
 		<div id="content">
             <div id="logox_counter">
-                <div id="logox_counter_top">CURRENT LOGO ITERATIONS</div>
+                <div id="logox_counter_top">CURRENT LOGO COMBINATIONS</div>
 <?php
 global $wpdb;
 
@@ -113,7 +113,7 @@ foreach ($uploads as $upload) {
     }
 }
 ?>
-                <div id="logox_counter_number"><?php echo $lettercount['R']*$lettercount['A']*$lettercount['A']*$lettercount['K']; ?></div>
+                <div id="logox_counter_number"><?php echo max ($lettercount['R'], 1) * max ($lettercount['A'], 1) * max ($lettercount['A'], 1) * max ($lettercount['K'], 1); ?></div>
                 <div id="logox_counter_body">
                     <hr />
                     <a href="<?php echo get_bloginfo ('url'); ?>/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">Read the story behind our logo</a>
