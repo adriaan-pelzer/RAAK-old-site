@@ -291,28 +291,33 @@ foreach (array ('R', 'A', 'K') as $letter) {
             });
 
             $("#letter_R a").click ( function () {
-                $("#letter_R a img").fadeTo ('fast', 1, function () {
-                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
-                        $("#upload_letter").val ('R');
+                if ($("#upload_letter").val () != 'R') {
+                    $("#letter_R a img").fadeTo ('fast', 1, function () {
+                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
+                            $("#upload_letter").val ('R');
+                        });
                     });
-                });
+                }
             });
 
             $("#letter_A a").click ( function () {
-                $("#letter_A a img").fadeTo ('fast', 1, function () {
-                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
-                        $("#upload_letter").val ('A');
+                if ($("#upload_letter").val () != 'A') {
+                    $("#letter_A a img").fadeTo ('fast', 1, function () {
+                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
+                            $("#upload_letter").val ('A');
+                        });
                     });
-                });
-
+                }
             });
 
             $("#letter_K a").click ( function () {
-                $("#letter_K a img").fadeTo ('fast', 1, function () {
-                    $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
-                        $("#upload_letter").val ('K');
+                if ($("#upload_letter").val () != 'K') {
+                    $("#letter_K a img").fadeTo ('fast', 1, function () {
+                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
+                            $("#upload_letter").val ('K');
+                        });
                     });
-                });
+                }
             });
 
 <?php
