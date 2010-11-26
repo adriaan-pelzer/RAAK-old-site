@@ -220,7 +220,7 @@ foreach ($letters as $display_letter=>$sletter) {
 <?php
 foreach (array ('R', 'A', 'K') as $letter) {
 ?>
-            $("#letter_<?php echo $letter; ?> a img").fadeTo (0, <?php if ((isset ($_GET['upload_letter']) && ($_GET['upload_letter'] == $letter)) || (!(isset ($_GET['upload_letter'])) && ($letter == 'R'))) { ?>1<?php } else { ?>0.5<?php } ?>);
+            $("#letter_<?php echo $letter; ?> a img").fadeTo (0, <?php if ((isset ($_GET['upload_letter']) && ($_GET['upload_letter'] == $letter)) || (!(isset ($_GET['upload_letter'])) && ($letter == 'R'))) { ?>1<?php } else { ?>0.3<?php } ?>);
 <?php
 }
 ?>
