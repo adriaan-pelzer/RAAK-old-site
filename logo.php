@@ -489,7 +489,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
                 </div><!-- bluebox_body -->
                 <div id="bluebox_bottom"></div>
             </div><!-- #bluebox -->
-            <div id="whitebox_extra">
+            <!--div id="whitebox_extra">
                 <div id="whitebox_extra_tabs">
                     <div id="whitebox_extra_tabs_download">
                         <div class="whitebox_extra_tab_top"></div>
@@ -504,7 +504,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
                     </ul>
                 </div>
                 <div id="whitebox_extra_bottom"></div>
-            </div>
+            </div-->
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tabs">
                     <div id="whitebox_secondary_tabs_upload" class="whitebox_secondary_tab<?php if ($state == 0) { ?> active<?php } ?>">
