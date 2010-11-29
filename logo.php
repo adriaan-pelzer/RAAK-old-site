@@ -489,6 +489,21 @@ foreach (array ('R', 'A', 'K') as $letter) {
                 </div><!-- bluebox_body -->
                 <div id="bluebox_bottom"></div>
             </div><!-- #bluebox -->
+            <div id="whitebox_extra">
+                <div id="whitebox_extra_tabs">
+                    <div id="whitebox_extra_tabs_download">
+                        <div class="whitebox_extra_tab_top"></div>
+                        <div class="whitebox_extra_tab_body"></div>
+                    </div>
+                </div>
+                <div id="whitebox_extra_top"></div>
+                <div id="whitebox_extra_body">
+                    <ul>
+                        <li><a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
+                        <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
+                    </ul>
+                </div>
+            </div>
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tabs">
                     <div id="whitebox_secondary_tabs_upload" class="whitebox_secondary_tab<?php if ($state == 0) { ?> active<?php } ?>">
