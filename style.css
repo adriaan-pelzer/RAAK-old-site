@@ -821,8 +821,8 @@ body.page-template-home-php #whitebox_primary_body_title {
     /*float: right;*/
     vertical-align: top;
     margin-left: 20px;      /*check in IE*/
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 #whitebox_secondary_tab_body, #whitebox_extra_tab_body {
