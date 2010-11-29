@@ -1835,12 +1835,22 @@ div#whitebox_secondary div#whitebox_secondary_body div ul li {
 }
 
 
-.whitebox_secondary_tab_body {
+.whitebox_secondary_tab_body, .whitebox_extra_tab_body {
     height: 26px;
     width: 108px;
     text-align: center;
     padding-top: 4px;
 }
+.whitebox_extra_tab_body {
+    color: white;
+    font: normal normal normal 11px/normal arial, sans-serif;
+    height: 26px;
+    margin-left: 1px;
+    padding-top: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+    
 
 #whitebox_secondary_tabs_mostviewed {
     margin-left: 1px;
