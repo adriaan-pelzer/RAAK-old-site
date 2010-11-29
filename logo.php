@@ -220,7 +220,7 @@ foreach ($letters as $display_letter=>$sletter) {
 <?php
 foreach (array ('R', 'A', 'K') as $letter) {
 ?>
-            $("#letter_<?php echo $letter; ?> a img").fadeTo (0, <?php if ((isset ($_GET['upload_letter']) && ($_GET['upload_letter'] == $letter)) || (!(isset ($_GET['upload_letter'])) && ($letter == 'R'))) { ?>1<?php } else { ?>0.1<?php } ?>);
+            $("#letter_<?php echo $letter; ?> a img").fadeTo (0, <?php if ((isset ($_GET['upload_letter']) && ($_GET['upload_letter'] == $letter)) || (!(isset ($_GET['upload_letter'])) && ($letter == 'R'))) { ?>1<?php } else { ?>0.3<?php } ?>);
 <?php
 }
 ?>
@@ -293,7 +293,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
             $("#letter_R a").click ( function () {
                 if ($("#upload_letter").val () != 'R') {
                     $("#letter_R a img").fadeTo ('fast', 1, function () {
-                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
+                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.3, function () {
                             $("#upload_letter").val ('R');
                         });
                     });
@@ -303,7 +303,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
             $("#letter_A a").click ( function () {
                 if ($("#upload_letter").val () != 'A') {
                     $("#letter_A a img").fadeTo ('fast', 1, function () {
-                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
+                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.3, function () {
                             $("#upload_letter").val ('A');
                         });
                     });
@@ -313,7 +313,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
             $("#letter_K a").click ( function () {
                 if ($("#upload_letter").val () != 'K') {
                     $("#letter_K a img").fadeTo ('fast', 1, function () {
-                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.1, function () {
+                        $("#letter_"+$("#upload_letter").val ()+" a img").fadeTo ('fast', 0.3, function () {
                             $("#upload_letter").val ('K');
                         });
                     });
