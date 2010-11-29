@@ -503,6 +503,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
                         <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
                     </ul>
                 </div>
+                <div id="whitebox_extra_bottom"></div>
             </div>
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tabs">
