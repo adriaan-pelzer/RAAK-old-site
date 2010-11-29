@@ -493,7 +493,7 @@ foreach (array ('R', 'A', 'K') as $letter) {
                 <div id="whitebox_extra_tabs">
                     <div id="whitebox_extra_tabs_download">
                         <div class="whitebox_extra_tab_top"></div>
-                        <div class="whitebox_extra_tab_body"></div>
+                        <div class="whitebox_extra_tab_body">Downloads</div>
                     </div>
                 </div>
                 <div id="whitebox_extra_top"></div>
