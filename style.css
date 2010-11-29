@@ -825,7 +825,7 @@ body.page-template-home-php #whitebox_primary_body_title {
     margin-top: 20px;
 }
 
-#whitebox_secondary_tab_body {
+#whitebox_secondary_tab_body, #whitebox_extra_tab_body {
     background: url(images/whitebox_secondary_tab_top.png);
     height: 26px;
     font: 11px arial, sans-serif;
@@ -839,6 +839,16 @@ body.page-template-home-php #whitebox_primary_body_title {
     padding: 0 10px 0 15px;
     background: url(images/whitebox_secondary_background.png);
 }
+
+#whitebox_extra_body ul li a {
+    color: #666666;
+    text-decoration: underline;
+}
+
+#whitebox_extra_body ul {
+    list-style-type: none;
+}
+    
 
 .bluecaps {
     font: 11px arial, sans-serif!important;
