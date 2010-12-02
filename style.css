@@ -822,6 +822,10 @@ body.page-template-home-php #whitebox_primary_body_title {
     vertical-align: top;
     margin-left: 20px;      /*check in IE*/
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.page-template-logo-php #whitebox_secondary, #whitebox_extra {
     margin-top: 0;
 }
 
