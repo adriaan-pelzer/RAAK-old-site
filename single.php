@@ -294,7 +294,7 @@ $categories = get_categories ("child_of=".get_cat_ID('Blog'));
 
 foreach ($categories as $category) {
 ?>
-                            <li><a href=""><?php echo $category->cat_name; ?></a></li>
+                            <li><a href="<?php echo get_bloginfo ('url'); ?>/category/<?php echo $category->cat_name; ?>/"><?php echo $category->cat_name; ?></a></li>
 <?php
 }
 ?>
