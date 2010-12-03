@@ -2468,6 +2468,7 @@ body.archive #whitebox_secondary,
 body.tag #whitebox_secondary,
 body.four04 #whitebox_secondary,
 .page-template-logo-php #whitebox_secondary,
+.page-template-blog-php #whitebox_secondary,
 body.pageid-1894 #whitebox_secondary {
     display: block!important;
     margin-left: 412px!important;
