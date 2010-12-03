@@ -2113,7 +2113,7 @@ body.category #bluebox_tab_body {
     text-transform: uppercase;
 }
 
-.comment-author span a {
+.comment-author span a, .comment-author span.fn {  /*I'm doing the same thing twice here, but I want to be sure it works*/
     vertical-align: top;
     line-height: 10px;
     display: none;
