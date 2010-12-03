@@ -1754,6 +1754,7 @@ div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_bo
 
 body.page-template-blog-php div#wrapper div#container div#content div#bluebox {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 body.page-template-blog-php div#wrapper div#container div#content div#bluebox div#bluebox_top,
