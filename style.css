@@ -2866,6 +2866,10 @@ body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php 
 
 /*********************logo all*******************/
 
+#bluebox_big {
+    margin-top: 10px;
+}
+
 #bluebox_big_top {
     background: url(images/bluebox_big_top.png);
 }
@@ -2886,6 +2890,7 @@ body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php 
     width: 91px;
     text-align: center;
     margin-left: 13px;
+    vertical-align: top;
 }
 
 #bluebox_big_body_content_row_item_image {
@@ -2926,7 +2931,7 @@ body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php 
 }
 
 #bluebox_big_body_content_row_item_name {
-    height: 13px;
+    /*height: 13px;*/
 }
 
 #bluebox_big_body hr.solid {
