@@ -135,6 +135,8 @@ foreach (array ('R', 'A', 'K') as $sletter) {
 <?php
             if (($letter->userurl) && ($letter->userurl != "") && (!(preg_match ("/^((https?|ftp)\:\/\/)/", $letter->userurl)))) {
                 $userurl = "http://".$letter->userurl;
+            } else {
+                $userurl = $letter->userurl;
             }
 ?>
                                     <?php if ($userurl && ($userurl != "")) { ?><a href="<?php echo $userurl; ?>"><?php } ?><?php echo $letter->username; ?><?php if ($userurl && ($userurl != "")) { ?></a><?php } ?>
