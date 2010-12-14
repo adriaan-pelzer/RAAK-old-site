@@ -137,7 +137,7 @@ foreach (array ('R', 'A', 'K') as $sletter) {
                 $userurl = "http://".$letter->userurl;
             }
 ?>
-                                    <a href="<?php echo $userurl; ?>"><?php echo $letter->username; ?></a>
+                                    <?php if ($userurl && ($userurl != "")) { ?><a href="<?php echo $userurl; ?>"><?php } ?><?php echo $letter->username; ?><?php if ($userurl && ($userurl != "")) { ?></a><?php } ?>
                                 </div>
                             </div>
 <?php
