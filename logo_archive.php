@@ -133,11 +133,13 @@ foreach (array ('R', 'A', 'K') as $sletter) {
                                 </div>
                                 <div id="bluebox_big_body_content_row_item_name">
 <?php
-            if (($letter->userurl) && (!(preg_match ("/^((https?|ftp)\:\/\/)/", $letter->userurl)))) {
+            if (($letter->userurl) && ($letter->userurl != "") && (!(preg_match ("/^((https?|ftp)\:\/\/)/", $letter->userurl)))) {
                 $userurl = "http://".$letter->userurl;
+            } else {
+                $userurl = $letter->userurl;
             }
 ?>
-                                    <a href="<?php echo $userurl; ?>"><?php echo $letter->username; ?></a>
+                                    <?php if ($userurl && ($userurl != "")) { ?><a href="<?php echo $userurl; ?>"><?php } ?><?php echo $letter->username; ?><?php if ($userurl && ($userurl != "")) { ?></a><?php } ?>
                                 </div>
                             </div>
 <?php
