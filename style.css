@@ -2598,12 +2598,22 @@ body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php 
 .page-template-logo-php #bluebox_body_center_bottom_name,
 #bluebox_big_body_content_row_item_name,
 .page-template-logo-php #bluebox_body_right_bottom_name {
-    color: #00aeef;
+    color: #666666;
     height: 26px;
     line-height: 13px;
     text-align: center;
     margin-bottom: 2px;
     overflow: hidden;
+}
+
+.page-template-logo-php #bluebox_body_left_top_name a,
+.page-template-logo-php #bluebox_body_center_top_name a,
+.page-template-logo-php #bluebox_body_right_top_name a,
+.page-template-logo-php #bluebox_body_left_bottom_name a,
+.page-template-logo-php #bluebox_body_center_bottom_name a,
+#bluebox_big_body_content_row_item_name a,
+.page-template-logo-php #bluebox_body_right_bottom_name a {
+    color: #00aeef;
 }
 
 .page-template-logo-php #bluebox_body_left_top_image,
