@@ -2951,3 +2951,7 @@ body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php 
 #bluebox_big_body_nav .active a, #expand_A .active a, #expand_K .active a {
     color:#00aeef;
 }
+
+body.postid-3651 div.whitebox_primary_body_content table tbody tr td {
+    display: table-cell!important;
+}
