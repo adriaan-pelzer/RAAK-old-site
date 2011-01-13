@@ -2954,4 +2954,16 @@ body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php 
 
 body.postid-3651 div.whitebox_primary_body_content table tbody tr td {
     display: table-cell!important;
+    text-align: right;
+    border: 1px solid black;
+    padding: 0 5px;
+}
+
+body.postid-3651 div.whitebox_primary_body_content table tbody tr th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+body.postid-3651 div.whitebox_primary_body_content table {
+    border-collapse: collapse;
 }
