@@ -141,6 +141,7 @@ if (!(is_page_template ('logo.php'))) {
 </head>
 
 <body class="<?php sandbox_body_class() ?>">
+<?php echo $_SERVER['HTTP_USER_AGENT']; ?>
 <div id="wrapper" class="hfeed">
     <div id="header">
         <div id="header_top"></div>
