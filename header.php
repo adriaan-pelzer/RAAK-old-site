@@ -20,6 +20,13 @@ ob_end_clean ();
 	<link rel="stylesheet" type="text/css" href="<?php echo str_replace ("style.css", "style_ie_7.css", get_bloginfo('stylesheet_url')); ?>" />
     <![endif]-->
 <?php
+if (preg_match ("/iPhone/", $_SERVER['HTTP_USER_AGENT'])) {
+?>
+	<link rel="stylesheet" type="text/css" href="<?php echo str_replace ("style.css", "style_iphone.css", get_bloginfo('stylesheet_url')); ?>" />
+<?php
+}
+?>
+<?php
 if (preg_match ("/Opera/", $_SERVER['HTTP_USER_AGENT'])) {
 ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo str_replace ("style.css", "style_opera.css", get_bloginfo('stylesheet_url')); ?>" />
