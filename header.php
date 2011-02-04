@@ -216,7 +216,5 @@ if (sizeof ($letters['K']) == 0) {
 		    <?php sandbox_globalnav() ?>
 	    </div><!-- #access -->
         <div id="header_bottom"></div>
-<?php echo $_SERVER['HTTP_USER_AGENT']; ?>
-
 	</div><!--  #header -->
 
