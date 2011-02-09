@@ -454,11 +454,13 @@ foreach (array ('R', 'A', 'K') as $letter) {
                                 </div>
                                 <div id="bluebox_body_<?php echo $position; ?>_name">
 <?php
-            if (($upload->userurl) && (!(preg_match ("/^((https?|ftp)\:\/\/)/", $upload->userurl)))) {
+            if (($upload->userurl) && ($upload->userurl != "") && (!(preg_match ("/^((https?|ftp)\:\/\/)/", $upload->userurl)))) {
                 $userurl = "http://".$upload->userurl;
+            } else {
+                $userurl = $upload->userurl;
             }
 ?>
-                                    <a href="<?php echo $userurl; ?>"><?php echo $upload->username; ?></a>
+                                    <?php if ($userurl && ($userurl != "")) { ?><a href="<?php echo $userurl; ?>"><?php } ?><?php echo $upload->username; ?><?php if ($userurl && ($userurl != "")) { ?></a><?php } ?>
                                 </div>
 <?php
         } else {
