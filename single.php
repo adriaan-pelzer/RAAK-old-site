@@ -75,7 +75,7 @@ $authorpage = get_page_by_title ($authorname);
 $twittername = str_replace ("http://www.twitter.com/", "", get_post_meta ($authorpage->ID, 'twitter', true));
 $twittername = str_replace ("http://twitter.com/", "", $twittername);
 ?>
-                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> #9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <?php
 /**
  * Include this code on your theme for single blog posts (for example, in your single.php file)
