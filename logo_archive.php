@@ -12,7 +12,7 @@ $letters["R"] = array();
 $letters["A"] = array();
 $letters["K"] = array();
 
-$uploads = $wpdb->get_results ('SELECT * FROM `wp_logo_uploads` ORDER BY `timestamp` DESC');
+$uploads = $wpdb->get_results ('SELECT * FROM `wp_logo_uploads` WHERE `confirmed`=1 ORDER BY `timestamp` DESC');
 
 foreach ($uploads as $upload) {
     if (isset ($_GET['user'])) {
