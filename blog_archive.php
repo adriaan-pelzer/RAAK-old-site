@@ -134,7 +134,7 @@ if ($this_page > 0) {
                 <div id="bluebox_body">
 <?php
 ob_start();
-wp_tag_cloud("number=40");
+wp_tag_cloud("number=80");
 $tag_cloud = ob_get_contents();
 ob_end_clean();
 
