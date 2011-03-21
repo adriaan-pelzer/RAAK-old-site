@@ -225,28 +225,14 @@ if (sizeof ($r_posts) > 3) {
                     <div id="whitebox_secondary_body_mostviewed">
                         <ul>
 <?php
-$posts = get_posts ("numberposts=-1&category=".get_cat_id ('Blog'));
-$post_visits = array();
-$options = array ("show"=>"posts", "posts"=>25);
+if ( function_exists('stats_get_csv') && $top_posts = stats_get_csv('postviews', 'days=0&limit=25') ) {
+    $i = 0;
 
-if (function_exists('wpcomstats_most_visited')) {
-    ob_start();
-    wpcomstats_most_visited($options);
-    $visits = ob_get_contents();
-    ob_end_clean();
-}
-
-$mv_posts = explode ("<br />", $visits);
-
-$i = 0;
-
-foreach ($mv_posts as $post) {
-    if ($post != "") {
-        $post = str_replace ("&raquo;", "", $post);
-        $title = preg_replace ("/<[^>]+>/", "", $post);
-        $post_id = $wpdb->get_var( $wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE `post_title`='".$title."'"));
+    foreach ($top_posts as $post) {
+        $title = htmlspecialchars_decode ($post["post_title"], ENT_QUOTES);
+        $post_id = $wpdb->get_var( $wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE `post_title`='".mysql_real_escape_string ($title)."' AND `post_status`='publish'"));
         if (in_category ('Blog', $post_id)) {
-            echo "                            <li>".$post."</li>\n";
+            echo "                            <li><a href=\"".$post["post_permalink"]."\">".$post["post_title"]."</a></li>\n";
             $i++;
         }
         if ($i > 5) {
@@ -254,36 +240,6 @@ foreach ($mv_posts as $post) {
         }
     }
 }
-/*$posts = get_posts ("numberposts=-1&category=".get_cat_id ('Blog'));
-$post_visits = array();
-
-foreach ($posts as $post) {
-    ob_start();
-    wpcomstats_visits("", "", $post->ID, 0);
-    $visits = ob_get_contents();
-    ob_end_clean();
-    $visits = ($visits == "No data yet!")?0:$visits;
-    $this_post['visits'] = $visits;
-    $this_post['post'] = $post;
-    array_push ($post_visits, $this_post);
-}
-
-function cmp ($a, $b) {
-    $c = (int) $a['visits'];
-    $d = (int) $b['visits'];
-    return ($c == $d)?0:(($c < $d)?1:-1);
-}
-
-usort ($post_visits, 'cmp');
-
-for ($i = 0; $i < 8; $i++) {
-    echo "<li>";
-    echo "<a href=\"".get_permalink($post_visits[$i]['post']->ID)."\">";
-    echo $post_visits[$i]['post']->post_title;
-    echo "</a>";
-    echo "</li>";
-    echo "\n";
-}*/
 ?>
                         </ul>
                     </div><!-- #whitebox_secondary_body_mostviewed -->
