@@ -356,7 +356,8 @@ foreach ($posts as $post) {
                         </ul>
                         <div id="whitebox_secondary_body_content_three_footer">
 <?php
-$cat_link = get_bloginfo ('url')."/category/".get_category(get_cat_id('RAAKonteur'))->slug."/";
+//$cat_link = get_bloginfo ('url')."/category/".get_category(get_cat_id('RAAKonteur'))->slug."/";
+$cat_link = get_bloginfo ('url')."/blog/the-raakonteur/";
 ?>
                             <span class="bluebox_body_content_link_text"><a href="<?php echo $cat_link; ?>" rel="nofollow">More</a></span><span class="bluebox_body_content_link_arrow"><a href="<?php echo $cat_link; ?>" rel="nofollow">&#9660;</a></span>
                         </div>
