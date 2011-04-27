@@ -153,5 +153,16 @@ if (($homepage = get_post_meta ($post->ID, 'homepage', true)) != '') {
         window.onload = showImage_initial;
     //-->
     </script>
+<!-- Newscurve Beta Code :: Adriaan Pelzer -->
+<script type="text/javascript">
+var _nct = _nct || [];
+
+(function() {
+var nc = document.createElement('script'); nc.type = 'text/javascript'; nc.async = true;
+nc.src = 'http://t.newscurve.com/nct.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nc, s);
+})();
+</script>
+<!-------------------------------------------->
 
 <?php get_footer() ?>

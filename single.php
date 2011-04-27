@@ -263,5 +263,15 @@ foreach ($categories as $category) {
         <?php get_sidebar() ?>
         <div id="container_bottom"></div>
 	</div><!-- #container -->
+<!-- Newscurve Beta Code :: Adriaan Pelzer -->
+<script type="text/javascript">
+var _nct = _nct || [];
 
+(function() {
+var nc = document.createElement('script'); nc.type = 'text/javascript'; nc.async = true;
+nc.src = 'http://t.newscurve.com/nct.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nc, s);
+})();
+</script>
+<!-------------------------------------------->
 <?php get_footer() ?>
