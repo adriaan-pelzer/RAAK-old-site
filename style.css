@@ -780,7 +780,7 @@ body.page-template-home-php #whitebox_primary_body_title {
     padding: 0 15px;
     background: url(images/whitebox_primary_background.png);
     padding-bottom: 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #whitebox_primary_body hr {
@@ -2059,7 +2059,7 @@ body.single div#wrapper div#container div#content div#whitebox_primary a, body.p
     width: 92px;
     height: 20px;
     padding: 0!important;
-    margin: 20px 0 0 87px!important;
+    margin: 10px 0 0 87px!important;
 }
 
 .opengraphprotocoltools-div iframe {
@@ -2967,3 +2967,14 @@ body.postid-3651 div.whitebox_primary_body_content table tbody tr th {
 body.postid-3651 div.whitebox_primary_body_content table {
     border-collapse: collapse;
 }
+
+.fb_iframe_widget {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 41px;
+}
+
+.fb_edge_comment_widget {
+    top: 10px !important;
+}
+

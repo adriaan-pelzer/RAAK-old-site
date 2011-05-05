@@ -87,11 +87,13 @@ if (function_exists('the_opengraphprotocoltools_like_code')):
     $likecode = ob_get_contents();
     ob_end_clean();
 
+    //echo str_replace ("layout=standard", "layout=button_count&amp;send=true", $likecode);
     echo str_replace ("layout=standard", "layout=button_count", $likecode);
 else:
 	echo "<!-- opengraphprotocoltools is not activated -->";
 endif;
 ?>
+                            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
                         </div><!-- .whitebox_primary_body_share -->
                         <hr class="solid" />
                         <div class="whitebox_primary_body_content">
