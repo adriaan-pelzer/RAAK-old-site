@@ -22,10 +22,6 @@ body.s-category-blog div#wrapper div#container div#content div#whitebox_primary 
     padding: 0 12px;
 }
 
-.opengraphprotocoltools-div {
-    margin-left: 81px!important;
-}
-
 
 div#twitter_wessel #twitter_body .twtr-widget-profile h3, div#twitter_gerrie #twitter_body .twtr-widget-profile h3, div#twitter_adriaan #twitter_body .twtr-widget-profile h3, div#twitter #twitter_body .twtr-widget-profile h3 {
     width: 160px!important;
@@ -37,4 +33,8 @@ div#twitter_wessel #twitter_body .twtr-widget-profile h3, div#twitter_gerrie #tw
 
 #access {
     margin-left: 54px;                                  /*IE specific*/
+}
+
+.single .whitebox_primary_body_share {
+    margin-left: 82px;
 }

@@ -217,7 +217,7 @@ body.four04 #whitebox_big_body_search a {
 
 .opengraphprotocoltools-div {
     width: 98px;
-    margin-left: 77px!important;
+    margin-left: 0px!important;
 }
 
 
@@ -236,4 +236,10 @@ body.four04 #whitebox_big_body_search a {
 
 #whitebox_secondary_body_submit label[for="upload_file"] {
     vertical-align: 70%;
+}
+
+.single .whitebox_primary_body_share {
+    margin-left: 81px;
+    width: auto;
+    text-align: left;
 }
