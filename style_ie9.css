@@ -243,3 +243,8 @@ body.four04 #whitebox_big_body_search a {
     width: auto;
     text-align: left;
 }
+
+#mc_embed_signup form fieldset div {
+    padding-top: 2.5em!important;
+    line-height: 1.8em;
+}
