@@ -69,7 +69,7 @@ function browser_specific_stylesheet(){
     }
 
     if ($stylesheet) {
-        return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/css/'.$stylesheet.'?ver=1.0" />';
+        return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/'.$stylesheet.'?ver=1.0" />';
     } else {
         return '<!-- '.$browser->getUserAgent().' -->';
     }
