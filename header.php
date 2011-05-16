@@ -1,3 +1,81 @@
+<?php
+require_once 'Browser.php';
+
+$browser = new Browser ();
+
+switch ($browser->getPlatform()) {
+case Browser::PLATFORM_IPHONE:
+case Browser::PLATFORM_IPOD:
+case Browser::PLATFORM_BLACKBERRY:
+case Browser::PLATFORM_NOKIA:
+case Browser::PLATFORM_ANDROID:
+    if (!(isset ($_SESSION['desktop_on_mobile']))) {
+        header ("Location: http://m.nirvana.raak.it");
+        die();
+    }
+    break;
+}
+
+function browser_specific_stylesheet(){
+    $browser = new Browser ();
+
+    switch ($browser->getBrowser()) {
+    case Browser::BROWSER_OPERA:
+        $stylesheet = 'style_op11.css';
+        break;
+    case Browser::BROWSER_FIREFOX:
+        if ($browser->getVersion() >= 4) {
+            $stylesheet = 'style_ff4.css';
+        } else if ($browser->getVersion() >= 3.6) {
+            $stylesheet = 'style_ff36.css';
+        } else if ($browser->getVersion() >= 3.5) {
+            $stylesheet = 'style_ff35.css';
+        } else {
+            $stylesheet = 'style_ff30.css';
+        }
+        break;
+    case Browser::BROWSER_IE:
+        if ($browser->getVersion() >= 9) {
+            $stylesheet = 'style_ie9.css';
+        } else if ($browser->getVersion() >= 8) {
+            $stylesheet = 'style_ie8.css';
+        } else if ($browser->getVersion() >= 7) {
+            $stylesheet = 'style_ie7.css';
+        } else if ($browser->getVersion() >= 6) {
+            $stylesheet = 'style_ie6.css';
+        } else {
+            $found = FALSE;
+        }
+        break;
+    case Browser::BROWSER_SAFARI:
+        $stylesheet = 'style_sf5.css';
+        break;
+    case Browser::BROWSER_CHROME:
+        if ($browser->getVersion() >= 12) {
+            $stylesheet = 'style_ch12.css';
+        } else if ($browser->getVersion() >= 11) {
+            $stylesheet = 'style_ch11.css';
+        } else if ($browser->getVersion() >= 10) {
+            $stylesheet = 'style_ch10.css';
+        } else if ($browser->getVersion() >= 9) {
+            $stylesheet = 'style_ch9.css';
+        } else {
+            $stylesheet = 'style_ch8.css';
+        }
+        break;
+    default:
+        $found = FALSE;
+        break;
+    }
+
+    if ($stylesheet) {
+        return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/'.$stylesheet.'?ver=1.0" />';
+    } else {
+        return '<!-- '.$browser->getUserAgent().' -->';
+    }
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes() ?>>
 <head profile="http://gmpg.org/xfn/11">
@@ -11,6 +89,7 @@ ob_end_clean ();
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>?ver=1.0" />
+    <?php echo browser_specific_stylesheet(); ?>
     <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="<?php echo str_replace ("style.css", "style_ie.css", get_bloginfo('stylesheet_url')); ?>" />
     <![endif]-->
