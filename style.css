@@ -2048,7 +2048,9 @@ body.single div#wrapper div#container div#content div#whitebox_primary a, body.p
 
 .single .whitebox_primary_body_share {
     margin-top: 10px;
-    text-align: right;
+    width:auto;
+    /*text-align: right;*/
+    margin-left: 84px;
 }
 
 .twitter-share-button {
@@ -2059,7 +2061,7 @@ body.single div#wrapper div#container div#content div#whitebox_primary a, body.p
     width: 92px;
     height: 20px;
     padding: 0!important;
-    margin: 10px 0 0 87px!important;
+    margin: 10px 0 0 0px!important;
 }
 
 .opengraphprotocoltools-div iframe {
@@ -2970,8 +2972,8 @@ body.postid-3651 div.whitebox_primary_body_content table {
 
 .fb_iframe_widget {
     margin-top: 10px;
-    margin-bottom: 15px;
-    margin-right: 41px;
+    margin-bottom: 12px;
+    margin-right: 44px;
 }
 
 .fb_edge_comment_widget {
