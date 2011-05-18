@@ -2980,3 +2980,10 @@ body.postid-3651 div.whitebox_primary_body_content table {
     top: 10px !important;
 }
 
+
+#mc_embed_signup form fieldset div {
+    background: transparent!important;
+    border: 0!important;
+    font-size: 11px!important;
+    text-align: left!important;
+}
