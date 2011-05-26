@@ -7,7 +7,6 @@ include ('local_functions.php');
 
 $blogposts = get_posts ("numberposts=-1&category=".get_cat_id ('Blog'));
 ?>
-
 <?php get_header() ?>
 
     <script type="text/javascript">

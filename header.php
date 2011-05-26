@@ -3,7 +3,7 @@ require_once 'Browser.php';
 
 $browser = new Browser ();
 
-switch ($browser->getPlatform()) {
+/*switch ($browser->getPlatform()) {
 case Browser::PLATFORM_IPHONE:
 case Browser::PLATFORM_IPOD:
 case Browser::PLATFORM_BLACKBERRY:
@@ -14,7 +14,7 @@ case Browser::PLATFORM_ANDROID:
         die();
     }
     break;
-}
+}*/
 
 function browser_specific_stylesheet(){
     $browser = new Browser ();
