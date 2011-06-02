@@ -16,6 +16,19 @@ case Browser::PLATFORM_ANDROID:
     break;
 }*/
 
+function is_ie7() {
+    $browser = new Browser ();
+    switch ($browser->getBrowser()) {
+    case Browser::BROWSER_IE:
+        if ($browser->getVersion() <= 7)
+            return TRUE;
+        break;
+    default:
+        break;
+    }
+    return FALSE;
+}
+
 function browser_specific_stylesheet(){
     $browser = new Browser ();
 
