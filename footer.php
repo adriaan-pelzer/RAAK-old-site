@@ -16,6 +16,6 @@
 </div><!-- #wrapper .hfeed -->
 
 <?php wp_footer() ?>
-
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 </body>
 </html>
