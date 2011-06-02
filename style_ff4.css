@@ -5,3 +5,7 @@
 fieldset {
     width: 150px;
 }
+
+.whitebox_primary_body_content pre {
+    white-space: pre-wrap;
+}
