@@ -239,12 +239,19 @@ body.four04 #whitebox_big_body_search a {
 }
 
 .single .whitebox_primary_body_share {
-    margin-left: 78px;
+    margin-left: 78px!important;
     width: auto;
     text-align: left;
 }
 
 #mc_embed_signup form fieldset div {
     padding-top: 2.5em!important;
-    line-height: 1.8em;
+}
+
+#mc_embed_signup form fieldset div span {
+    padding-top: 2.5em!important;
+}
+
+#mc_embed_signup form fieldset div.mc-field-group {
+    padding-top: 0!important;
 }
