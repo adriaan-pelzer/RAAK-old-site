@@ -169,6 +169,8 @@ if (($post->post_title == "Gerrie Smits") || ($post->post_title == "Wessel van R
         <div id="twitter"<?php if ($about && ($post->post_title != "About")) { echo " style=\"display: none\""; } ?>>
             <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></div>
             <div id="twitter_body">
+            <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
+            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
             <script>
 new TWTR.Widget({
@@ -209,6 +211,8 @@ if ($about) {
     <div id="twitter_adriaan"<?php if ($post->post_title != "Adriaan Pelzer") { echo " style=\"display: none\""; } ?>>
             <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/adriaan_pelzer">adriaan_pelzer</a></div>
             <div id="twitter_body">
+            <div id="twitter_follow"><a href="http://twitter.com/adriaan_pelzer" class="twitter-follow-button" data-show-count="false">Follow @adriaan_pelzer</a></div>
+            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
             <script>
 new TWTR.Widget({
@@ -246,6 +250,8 @@ new TWTR.Widget({
         <div id="twitter_gerrie"<?php if ($post->post_title != "Gerrie Smits") { echo " style=\"display: none\""; } ?>>
             <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/grrRAAK">grrRAAK</a></div>
             <div id="twitter_body">
+            <div id="twitter_follow"><a href="http://twitter.com/grrRAAK" class="twitter-follow-button" data-show-count="false">Follow @grrRAAK</a></div>
+            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
             <script>
 new TWTR.Widget({
@@ -283,6 +289,8 @@ new TWTR.Widget({
         <div id="twitter_wessel"<?php if ($post->post_title != "Wessel van Rensburg") { echo " style=\"display: none\""; } ?>>
             <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/wildebees">wildebees</a></div>
             <div id="twitter_body">
+            <div id="twitter_follow"><a href="http://twitter.com/wildebees" class="twitter-follow-button" data-show-count="false">Follow @wildebees</a></div>
+            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
             <script>
 new TWTR.Widget({

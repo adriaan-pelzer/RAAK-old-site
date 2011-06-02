@@ -62,8 +62,13 @@ ob_start();
 the_author();
 $authorname = ob_get_contents();
 ob_end_clean();
+ob_start();
+the_author_login();
+$authorlogin = ob_get_contents();
+ob_end_clean();
+$postedbyhtml = "Posted by <a href=\"".get_bloginfo ('url')."/about/the-founders/".$authorlogin."/\">".$authorname."</a>";
 ?>
-                            <div id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="<?php echo get_bloginfo('url'); ?>/about/the-founders/<?php the_author_login (); ?>/"><?php echo $authorname; ?></a></div>
+                            <div id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item"><?php echo $postedbyhtml; ?></div>
                             <div id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"><?php echo strftime ('%e %B %Y', strtotime ($post->post_date)); ?></div>
                             <div id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item"><?php echo strftime ('%H:%M', strtotime ($post->post_date)); ?></div>
                             <div id="whitebox_primary_body_attr_comment" class="whitebox_primary_body_attr_item"><span id="whitebox_primary_body_attr_commenticon"><img src="<?php echo get_bloginfo ('template_directory'); ?>/images/whitebox_primary_body_attr_comment_icon.png" /></span><span id="whitebox_primary_body_attr_comments"><?php echo $post->comment_count." comment".(($post->comment_count == 1)?"":"s"); ?></span></div>
@@ -94,11 +99,16 @@ else:
 endif;
 ?>
                             <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
+                            <div id="plusone"><iframe allowtransparency="true" frameborder="0" hspace="0" id="I1_1307012621585" marginheight="0" marginwidth="0" name="I1_1307012621585" scrolling="no" src="https://plusone.google.com/u/0/_/+1/button?hl=en-US&amp;jsh=s%3Bplusone%3Agoogleapis.client%4021550740_8d71de52%2Fclient%3Bgoogleapis.proxy%4021550740_8d71de52%2Fproxy%3Bplusone%3Agoogleapis.client%3Aiframes-styles-bubble%4021550740_8d71de52%2Fbubble%3Biframes-styles-bubble!plusone%3Agoogleapis.client%4021550740_8d71de52%2Fbubble_only%3Bplusone-unsupported%4021550740_8d71de52%2Funsupported#url=<?php echo urlencode (php_self()); ?>&amp;size=medium&amp;count=true&amp;id=I1_1307012621585&amp;parent=<?php echo urlencode (get_bloginfo ('url')); ?>&amp;rpctoken=982298531&amp;_methods=_ready%2C_close%2C_open%2C_resizeMe" style="width: 82px; height: 20px; position: static; left: 0px; top: 0px; visibility: visible; " tabindex="-1" vspace="0" width="100%"></iframe></div>
                         </div><!-- .whitebox_primary_body_share -->
                         <hr class="solid" />
                         <div class="whitebox_primary_body_content">
                             <?php the_content(); ?>
                         </div><!-- .whitebox_primary_body_content -->
+                        <div class="whitebox_primary_body_flwbtn">
+                            <p><span><em><?php echo $postedbyhtml; ?></em></span><span><a href="<?php echo get_post_meta ($authorpage->ID, 'twitter', true); ?>" class="twitter-follow-button" data-show-count="true">Follow @<?php echo $twittername; ?></a></span></p>
+                            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                        </div>
                     </div><!-- .whitebox_primary_body_post -->
                     <div id="whitebox_primary_body_comments">
 <?php

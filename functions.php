@@ -9,6 +9,34 @@ SANDBOX is distributed in the hope that it will be useful, but WITHOUT ANY WARRA
 You should have received a copy of the GNU General Public License along with SANDBOX. If not, see http://www.gnu.org/licenses/.
 */
 
+function php_self($dropqs=true) {
+    $url = sprintf('%s://%s%s',
+        empty($_SERVER['HTTPS']) ? 'http' : 'https',
+        $_SERVER['SERVER_NAME'],
+        $_SERVER['REQUEST_URI']
+    );
+
+    $parts = parse_url($url);
+
+    $port = $_SERVER['SERVER_PORT'];
+    $scheme = $parts['scheme'];
+    $host = $parts['host'];
+    $path = @$parts['path'];
+    $qs   = @$parts['query'];
+
+    $port or $port = ($scheme == 'https') ? '443' : '80';
+
+    if (($scheme == 'https' && $port != '443')
+        || ($scheme == 'http' && $port != '80')) {
+            $host = "$host:$port";
+        }
+    $url = "$scheme://$host$path";
+    if ( ! $dropqs)
+        return "{$url}?{$qs}";
+    else
+        return $url;
+}
+
 function patch_nofollow ($menu, $title) {
         return str_replace ("title=\"".$title."\"", "title=\"".$title."\" rel=\"nofollow\"", $menu);
 }
