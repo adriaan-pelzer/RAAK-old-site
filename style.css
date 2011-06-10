@@ -1033,11 +1033,11 @@ div#primary {
 
 }
 
-#mc-embedded-subscribe-container {
+#mc_embed_signup form fieldset div#mc-embedded-subscribe-container {
     margin: 25px 0 0 10px!important;
     width: 78px;
     height: 25px;
-    background: url(images/newsletter_subscribe_button.png);
+    background: url(images/newsletter_subscribe_button.png)!important;
 }
 
 .indicate-required {
