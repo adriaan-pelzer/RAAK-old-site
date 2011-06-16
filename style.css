@@ -3007,3 +3007,7 @@ body.postid-4590 div.whitebox_primary_body_content table {
 #plusone {
     margin-bottom: 10px;
 }
+
+.whitebox_primary_body_content_archive {
+    margin-top: 0 !important;
+}
