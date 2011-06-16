@@ -60,7 +60,7 @@ if (isset ($_GET['authorid'])) {
             <div id="whitebox_primary">
                 <div id="whitebox_primary_top">
                 </div><!-- #whitebox_primary_top -->
-                <div id="whitebox_primary_body">
+                <div id="whitebox_primary_body" class="whitebox_primary_body_archive">
 <?php
 $i = 0;
 
