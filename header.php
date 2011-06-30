@@ -31,7 +31,7 @@ function browser_specific_stylesheet(){
         } else if ($browser->getVersion() >= 3.5) {
             $stylesheet = 'style_ff35.css';
         } else {
-            $stylesheet = 'style_ff30.css';
+            $stylesheet = 'style_ff35.css'; /*!!*/
         }
         break;
     case Browser::BROWSER_IE:
@@ -42,7 +42,7 @@ function browser_specific_stylesheet(){
         } else if ($browser->getVersion() >= 7) {
             $stylesheet = 'style_ie7.css';
         } else if ($browser->getVersion() >= 6) {
-            $stylesheet = 'style_ie6.css';
+            $stylesheet = 'style_ie7.css'; /*!!*/
         } else {
             $found = FALSE;
         }
@@ -52,15 +52,15 @@ function browser_specific_stylesheet(){
         break;
     case Browser::BROWSER_CHROME:
         if ($browser->getVersion() >= 12) {
-            $stylesheet = 'style_ch12.css';
+            $stylesheet = 'style_ch10.css'; /*!!*/
         } else if ($browser->getVersion() >= 11) {
-            $stylesheet = 'style_ch11.css';
+            $stylesheet = 'style_ch10.css'; /*!!*/
         } else if ($browser->getVersion() >= 10) {
             $stylesheet = 'style_ch10.css';
         } else if ($browser->getVersion() >= 9) {
-            $stylesheet = 'style_ch9.css';
+            $stylesheet = 'style_ch10.css'; /*!!*/
         } else {
-            $stylesheet = 'style_ch8.css';
+            $stylesheet = 'style_ch10.css'; /*!!*/
         }
         break;
     default:
