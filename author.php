@@ -60,7 +60,7 @@ foreach ($posts as $post) {
         $author = get_userdata ($post->post_author);
 ?>
                     <div id="whitebox_primary_body_post_<?php echo $i; ?>" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content"><a href="<?php echo get_permalink ($post->ID); ?>"><?php echo $post->post_title; ?></a></div>
+                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="<?php echo get_permalink ($post->ID); ?>"><?php echo $post->post_title; ?></a></div>
                         <hr />
                         <div class="whitebox_primary_body_attr">
                             <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="<?php echo get_bloginfo ('url'); ?>/about/the-founders/<?php echo $author->user_login; ?>/"><?php echo the_author_meta ('display_name', $post->post_author); ?></a></span>

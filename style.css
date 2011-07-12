@@ -3008,6 +3008,13 @@ body.postid-4590 div.whitebox_primary_body_content table {
     margin-bottom: 10px;
 }
 
-.whitebox_primary_body_content_archive {
+.whitebox_primary_body_content_archive, .archive_fix {
     margin-top: 0 !important;
 }
+
+/*#whitebox_primary_body_content_archive a, #whitebox_primary_body_content_archive a:visited {
+    color: #00aeef;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+}*/
