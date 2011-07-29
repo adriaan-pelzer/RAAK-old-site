@@ -3018,3 +3018,8 @@ body.postid-4590 div.whitebox_primary_body_content table {
     font-size: 18px;
     letter-spacing: 1px;
 }*/
+
+.darkbox {
+    border: 1px solid black;
+    background: #aaaaaa;
+}
