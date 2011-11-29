@@ -169,8 +169,8 @@ foreach ($project_types as $slug=>$project_type) {
 ?>
                                 <div class="whitebox_big_body_category_body_entry">
                                     <div class="whitebox_big_body_category_body_entry_title">
-                                    <span class="whitebox_big_body_category_body_entry_title_title"><?php if ($this_post) { echo "Client:"; } ?></span>
-                                        <span class="whitebox_big_body_category_body_entry_title_body"><?php if ($this_post) { echo get_post_meta ($this_post->ID, 'Client', true); } ?></span>
+                                    <span class="whitebox_big_body_category_body_entry_title_title"><?php if ($this_post) { echo "Product:"; } ?></span>
+                                        <span class="whitebox_big_body_category_body_entry_title_body"><?php if ($this_post) { echo get_post_meta ($this_post->ID, 'Product', true); } ?></span>
                                     </div><!-- .whitebox_big_body_category_body_entry_title -->
                                     <?php if ($this_post) { echo "<hr class=\"solid\" />"; } ?>
                                     <div class="whitebox_big_body_category_body_entry_body">
