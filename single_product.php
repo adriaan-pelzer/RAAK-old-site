@@ -63,7 +63,7 @@ foreach ($product_types as $slug=>$product_type) {
 <?php
 $seperator = FALSE;
 
-foreach (array("project"=>"Product", "solution"=>"Description") as $section_slug=>$section_title) {
+foreach (array("project"=>"Product", "solution"=>"Descript") as $section_slug=>$section_title) {
     if ($seperator) {
 ?>
                     <hr class="solid">
