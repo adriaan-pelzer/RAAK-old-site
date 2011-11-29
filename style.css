@@ -352,7 +352,8 @@ div#header {
     display: inline-block;
     padding-left: 20px;
     margin-right:-4px;
-    width: 432px;
+    /*width: 432px; AP: Before products page */
+    width: 247px;
     text-align: left;
     font: 10px din_schrift, arial_narrow, 'Arial Narrow', sans-serif;
     height: 12px;
