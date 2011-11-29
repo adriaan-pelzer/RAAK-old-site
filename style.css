@@ -1553,6 +1553,11 @@ body.s-category-raak-projects div#wrapper div#container div#content div#bluebox 
     background: url(images/bluebox_top_2.png);
 }
 
+body.s-category-raak-products div#wrapper div#container div#content div#bluebox div#bluebox_top {
+    height: 10px!important;
+    background: url(images/bluebox_top_2.png);
+}
+
 #bluebox_body_homepage {
     margin: 10px 0;
 }
