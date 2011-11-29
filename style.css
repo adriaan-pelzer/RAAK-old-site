@@ -1492,6 +1492,10 @@ body.s-category-raak-projects div#wrapper div#container div#content div#whitebox
     margin-top: 0px!important;
 }
 
+body.s-category-raak-products div#wrapper div#container div#content div#whitebox_primary {
+    margin-top: 0px!important;
+}
+
 
 body.s-category-raak-projects div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body {
     padding-top: 8px;
