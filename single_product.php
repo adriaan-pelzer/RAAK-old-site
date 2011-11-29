@@ -12,7 +12,7 @@ Single Post Template: Product
             <div id="whitebox_big">
                 <div id="whitebox_big_top"></div>
                 <div id="whitebox_big_body">
-                    <div id="whitebox_big_body_title">Our Work</div>
+                    <div id="whitebox_big_body_title">Our Products</div>
                     <div class="whitebox_big_body_nav">
 <?php the_post() ?>
 <?php
@@ -63,7 +63,7 @@ foreach ($product_types as $slug=>$product_type) {
 <?php
 $seperator = FALSE;
 
-foreach (array("client"=>"Client", "project"=>"Product", "brief"=>"Brief", "solution"=>"Solution") as $section_slug=>$section_title) {
+foreach (array("project"=>"Product", "solution"=>"Description") as $section_slug=>$section_title) {
     if ($seperator) {
 ?>
                     <hr class="solid">
