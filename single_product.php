@@ -16,7 +16,7 @@ Single Post Template: Product
                     <div class="whitebox_big_body_nav">
 <?php the_post() ?>
 <?php
-$work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK products'), 'orderby'=>'slug', 'order'=>'desc'));
+/*$work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK products'), 'orderby'=>'slug', 'order'=>'desc'));
 
 $product_types = array();
 $product_types['all-products'] = "RAAK products";
@@ -50,7 +50,7 @@ foreach ($product_types as $slug=>$product_type) {
 ?>
                         <span id="whitebox_big_body_nav_<?php echo $slug; ?>" class="whitebox_big_body_nav_item<?php echo $classadd; ?>"><a href="<?php echo get_bloginfo ('url'); ?>/our-work/?category=<?php echo $slug; ?>"><?php echo $product_type; ?></a></span>
 <?php
-}
+}*/
 ?>
                     </div><!-- #whitebox_big_body_nav -->
                     <hr />
