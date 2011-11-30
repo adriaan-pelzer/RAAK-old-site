@@ -72,7 +72,7 @@ foreach (array("project"=>"Product", "solution"=>"Descript") as $section_slug=>$
 ?>
                     <div id="whitebox_primary_body_<?php echo $section_slug; ?>" class="whitebox_primary_body_section">
                         <span class="whitebox_primary_body_section_title"><?php echo $section_title; ?>:</span>
-                        <span class="whitebox_primary_body_section_content"><?php echo get_post_meta ($post->ID, $section_title, true); ?></span>
+                        <span class="whitebox_primary_body_section_content"><?php if ($section_slug == "project") { ?><a target="_blank" href="<?php echo get_post_meta ($post->ID, "link", TRUE); ?>"><?php } ?><?php echo get_post_meta ($post->ID, $section_title, true); ?><?php if ($section_slug == "project") { ?></a><?php } ?></span>
                     </div><!-- .whitebox_primary_body_section -->
 <?php
     $seperator = TRUE;
