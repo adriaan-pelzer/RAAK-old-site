@@ -5,7 +5,7 @@ Template Name: Home
 
 include ('local_functions.php');
 
-$blogposts = get_posts ("numberposts=-1&category=".get_cat_id ('Blog'));
+$blogposts = get_posts ("numberposts=10&category=".get_cat_id ('Blog')."&orderby=post_date&order=DESC");
 ?>
 <?php get_header() ?>
 
