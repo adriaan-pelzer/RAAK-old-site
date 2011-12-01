@@ -25,9 +25,9 @@
  src: url(fonts/Arial_Narrow.eot); /* EOT file for IE */
 }
 
-#blog-description {
+/*#blog-description {
     width: 384px;
-}
+}*/
 
 #access {
     margin-left: 55px;                                  /*IE specific*/
