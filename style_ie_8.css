@@ -40,6 +40,6 @@ div#twitter_wessel #twitter_body .twtr-widget-profile h3, div#twitter_gerrie #tw
 }
 
 #mc_embed_signup legend {
-    position: static;
-    margin-top: 14px;
+    position: static!important;
+    margin-top: -14px;
 }
