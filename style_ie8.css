@@ -25,10 +25,6 @@
  src: url(fonts/Arial_Narrow.eot); /* EOT file for IE */
 }
 
-#blog-description {
-    width: 384px;
-}
-
 #access {
     margin-left: 55px;                                  /*IE specific*/
 }
@@ -245,7 +241,7 @@ body.four04 #whitebox_big_body_search a {
 }
 
 #blog-description {
-    width: 378px;                                       /*IE specific*/
+    width: 245px;                                       /*IE specific*/
 }
 
 #footer_copyright {
