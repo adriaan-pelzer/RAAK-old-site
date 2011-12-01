@@ -164,6 +164,10 @@ body.s-category-blog div#wrapper div#container div#content div#whitebox_primary 
     margin-top: -20px;
 }*/
 
+#mc_embed_signup legend {
+    position: static!important;
+    margin-top: -14px;
+}
 body.page-template-contact-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content div form p span input{
     width: 219px;
 }
