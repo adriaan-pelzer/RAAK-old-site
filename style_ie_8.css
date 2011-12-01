@@ -1,5 +1,5 @@
 #blog-description {
-    width: 378px;                                       /*IE specific*/
+    width: 245px;                                       /*IE specific*/
 }
 
 #footer_copyright {
@@ -37,4 +37,9 @@ div#twitter_wessel #twitter_body .twtr-widget-profile h3, div#twitter_gerrie #tw
 
 .single .whitebox_primary_body_share {
     margin-left: 79px;
+}
+
+#mc_embed_signup legend {
+    position: static;
+    margin-top: 14px;
 }
