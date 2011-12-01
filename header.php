@@ -69,7 +69,7 @@ function browser_specific_stylesheet(){
     }
 
     if ($stylesheet) {
-        return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/'.$stylesheet.'?ver=1.0" />';
+        return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/'.$stylesheet.'?ver=1.0" /><!-- '.$browser->getUserAgent().' -->';
     } else {
         return '<!-- '.$browser->getUserAgent().' -->';
     }
@@ -89,7 +89,7 @@ ob_end_clean ();
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>?ver=1.0" />
-    <?php echo browser_specific_stylesheet(); ?>
+    <!--dynamic-cached-content--><?php echo browser_specific_stylesheet(); ?><!--/dynamic-cached-content-->
     <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="<?php echo str_replace ("style.css", "style_ie.css", get_bloginfo('stylesheet_url')); ?>" />
     <![endif]-->
