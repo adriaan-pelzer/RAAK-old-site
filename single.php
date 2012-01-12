@@ -241,10 +241,9 @@ if ( function_exists('stats_get_csv') && $top_posts = stats_get_csv('postviews',
     $i = 0;
 
     foreach ($top_posts as $post) {
-        $title = htmlspecialchars_decode ($post["post_title"], ENT_QUOTES);
-        $post_id = $wpdb->get_var( $wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE `post_title`='".mysql_real_escape_string ($title)."' AND `post_status`='publish'"));
-        if (in_category ('Blog', $post_id)) {
-            echo "                            <li><a href=\"".$post["post_permalink"]."\">".$post["post_title"]."</a></li>\n";
+        if (in_category ('Blog', $post["post_id"])) {
+            $title = htmlspecialchars_decode(str_replace("#039;", "'", $post["post_title"]));
+            echo "                            <li><a href=\"".get_permalink($post["post_id"])."\">".$title."</a></li>\n";
             $i++;
         }
         if ($i > 5) {
