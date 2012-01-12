@@ -3,7 +3,7 @@
         <span id="footer_copyright">&copy; RAAK <?php echo strftime ("%Y"); ?></span>
         <span class="footer_link"><a title="RAAK.it URL shortener" href="http://raak.it">RAAK.it</a></span>
         <span class="footer_seperator">|</span>
-        <span class="footer_link"><a rel="nofollow" href="http://www.youtube.com/user/wewillRAAKyou">RAAK on Youtube</a></span>
+        <span class="footer_link"><a rel="nofollow" href="https://plus.google.com/105267258589882942377">RAAK on Google+</a></span>
         <span class="footer_seperator">|</span>
         <span class="footer_link"><a rel="nofollow" href="http://www.twitter.com/RAAKonteurs">RAAK on Twitter</a></span>
         <span class="footer_seperator">|</span>
