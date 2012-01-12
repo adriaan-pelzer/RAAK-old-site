@@ -130,10 +130,13 @@ $project_posts = array();
 
 foreach ($project_types as $slug=>$project_type) {
     $project_posts[$slug] = get_posts ("numberposts=-1&category=".get_cat_id ($project_type));
-    $number_of_pages = (int)(sizeof($project_posts[$slug])/9) + 1;
+    $number_of_pages = (int)(sizeof($project_posts[$slug])/9);
+    if (sizeof($project_posts[$slug])%9 != 0) {
+        $number_of_pages++;
+    }
 ?>
                     <div id="whitebox_big_body_<?php echo $slug; ?>" class="whitebox_big_body_category"<?php if ($slug != $showslug) { echo " style=\"display: none\""; } ?>>
-                        <div class="whitebox_big_body_category_page">
+                        <!--APdiv class="whitebox_big_body_category_page">
 <?php
     //echo "project type: ".$slug."<br />";
     //echo "number of posts: ".sizeof($project_posts[$slug])."<br />";
@@ -149,12 +152,12 @@ foreach ($project_types as $slug=>$project_type) {
                             <span class="whitebox_big_body_category_page_item_arrow">
                                 <a onclick="javascript: page('<?php echo $slug; ?>', current_page + 1, <?php echo $number_of_pages; ?>);">&#9658;</a>
                             </span>
-                        </div><!-- .whitebox_big_body_category_page -->
-                        <hr class="solid" />
+                        </div--><!-- .whitebox_big_body_category_page -->
+                        <!--APhr class="solid" /-->
 <?php
     for ($page_number=1; $page_number<=$number_of_pages; $page_number++) {
 ?>
-    <div id="whitebox_big_body_<?php echo $slug; ?>_<?php echo $page_number; ?>" class="whitebox_big_body_category_body"<?php if ($page_number != 1) { echo " style=\"display: none;\""; } ?>>
+    <div id="whitebox_big_body_<?php echo $slug; ?>_<?php echo $page_number; ?>" class="whitebox_big_body_category_body"<?php /*if ($page_number != 1) { echo " style=\"display: none;\""; }*/ ?>>
 <?php
         for ($row_number=1; $row_number<=3; $row_number++) {
 ?>
