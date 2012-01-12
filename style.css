@@ -1558,7 +1558,7 @@ body.s-category-raak-products div#wrapper div#container div#content div#whitebox
     padding-top: 4px;
 }
 
-#whitebox_primary_body_client {
+#whitebox_primary_body_project, #whitebox_primary_body_client {
     margin-top: 0;
 }
 

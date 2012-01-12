@@ -25,9 +25,9 @@
  src: url(fonts/Arial_Narrow.eot); /* EOT file for IE */
 }
 
-#blog-description {
+/*#blog-description {
     width: 384px;
-}
+}*/
 
 #access {
     margin-left: 55px;                                  /*IE specific*/
@@ -164,6 +164,10 @@ body.s-category-blog div#wrapper div#container div#content div#whitebox_primary 
     margin-top: -20px;
 }*/
 
+#mc_embed_signup legend {
+    position: static!important;
+    margin-top: -14px;
+}
 body.page-template-contact-php div#wrapper div#container div#content div#whitebox_primary div#whitebox_primary_body div.whitebox_primary_body_post div.whitebox_primary_body_content div form p span input{
     width: 219px;
 }
@@ -254,4 +258,8 @@ body.four04 #whitebox_big_body_search a {
 
 #mc_embed_signup form fieldset div.mc-field-group {
     padding-top: 0!important;
+}
+
+#bluebox_body_thumbpic {
+    margin-top: 4px;
 }
