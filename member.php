@@ -195,12 +195,6 @@ foreach ($founder_posts as $founder=>$founder_post) {
 <?php
     }
 
-    /*$googleplus = get_the_author_meta('jabber');
-    *
-        * if (!empty($googleplus)) {
-            *     $postedbyhtml .= ' <a href="'.$googleplus.'?rel=author">(Google+)</a>';
-            *     }*/
-
     if (get_post_meta ($founder_post->ID, 'gplus', true)) {
 ?>
                                     <div class="whitebox_primary_body_content_founder_social_gplus">
