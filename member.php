@@ -194,6 +194,21 @@ foreach ($founder_posts as $founder=>$founder_post) {
                                     </div><!-- whitebox_primary_body_content_founder_social_twitter -->
 <?php
     }
+
+    /*$googleplus = get_the_author_meta('jabber');
+    *
+        * if (!empty($googleplus)) {
+            *     $postedbyhtml .= ' <a href="'.$googleplus.'?rel=author">(Google+)</a>';
+            *     }*/
+
+    if (get_post_meta ($founder_post->ID, 'gplus', true)) {
+?>
+                                    <div class="whitebox_primary_body_content_founder_social_gplus">
+                                        <span class="whitebox_primary_body_content_founder_social_gplus_icon"><a rel="me" href="<?php echo get_post_meta ($founder_post->ID, 'gplus', true); ?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/gplus_icon.png" alt="Google+" /></a></span>
+                                        <span class="whitebox_primary_body_content_founder_social_gplus_text"><a href="<?php echo get_post_meta ($founder_post->ID, 'gplus', true); ?>">Google+</a></span>
+                                    </div><!-- whitebox_primary_body_content_founder_social_gplus -->
+<?php
+    }
 ?>
                                 </div><!-- whitebox_primary_body_content_founder_social -->
                             </div><!-- whitebox_primary_body_content_founder_info -->
