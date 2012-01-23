@@ -1333,7 +1333,7 @@ body.page-template-member-php div#wrapper div#container div#content div#bluebox 
     margin-top: 20px;
 }
 
-.whitebox_primary_body_content_founder_social_facebook, .whitebox_primary_body_content_founder_social_twitter {
+.whitebox_primary_body_content_founder_social_facebook, .whitebox_primary_body_content_founder_social_twitter, .whitebox_primary_body_content_founder_social_gplus {
     margin-top: 5px;
 }
 
@@ -1343,13 +1343,13 @@ body.page-template-member-php div#wrapper div#container div#content div#bluebox 
     overflow: visible;
 }
 
-.whitebox_primary_body_content_founder_social_linkedin a, .whitebox_primary_body_content_founder_social_facebook a, .whitebox_primary_body_content_founder_social_twitter a {
+.whitebox_primary_body_content_founder_social_linkedin a, .whitebox_primary_body_content_founder_social_facebook a, .whitebox_primary_body_content_founder_social_twitter a, .whitebox_primary_body_content_founder_social_gplus a {
     font: 9px arial, sans-serif;
     text-transform: uppercase;
     color: #666666;
 }
 
-.whitebox_primary_body_content_founder_social_linkedin a img, .whitebox_primary_body_content_founder_social_facebook a img, .whitebox_primary_body_content_founder_social_twitter a img {
+.whitebox_primary_body_content_founder_social_linkedin a img, .whitebox_primary_body_content_founder_social_facebook a img, .whitebox_primary_body_content_founder_social_twitter a img, .whitebox_primary_body_content_founder_social_gplus a img {
     vertical-align: middle;
 }
 
