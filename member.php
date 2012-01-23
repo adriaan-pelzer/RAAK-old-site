@@ -199,7 +199,7 @@ foreach ($founder_posts as $founder=>$founder_post) {
 ?>
                                     <div class="whitebox_primary_body_content_founder_social_gplus">
                                         <span class="whitebox_primary_body_content_founder_social_gplus_icon"><a rel="me" href="<?php echo get_post_meta ($founder_post->ID, 'gplus', true); ?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/gplus_icon.png" alt="Google+" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_gplus_text"><a href="<?php echo get_post_meta ($founder_post->ID, 'gplus', true); ?>">Google+</a></span>
+                                        <span class="whitebox_primary_body_content_founder_social_gplus_text"><a rel="me" href="<?php echo get_post_meta ($founder_post->ID, 'gplus', true); ?>">Google+</a></span>
                                     </div><!-- whitebox_primary_body_content_founder_social_gplus -->
 <?php
     }
