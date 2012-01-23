@@ -229,7 +229,7 @@ foreach ($blogposts as $post) {
                         <div id="whitebox_primary_body_title"><a href="<?php echo get_permalink ($post->ID); ?>"><?php echo $post->post_title; ?></a></div>
                         <hr />
                         <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="<?php echo get_bloginfo ('url'); ?>/about/the-founders/<?php echo $author->user_login; ?>/"><?php echo $author->first_name." ".$author->last_name; ?></a></span>
+                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="<?php echo get_bloginfo ('url'); ?>/about/the-founders/<?php echo $author->user_login; ?>/"><?php echo $author->first_name." ".$author->last_name; ?></a></span>
                             <span class="seperator">|</span>
                             <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"><?php echo strftime ('%e %h %Y', strtotime ($post->post_date)); ?></span>
                             <span class="seperator">|</span>

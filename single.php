@@ -68,12 +68,12 @@ the_author_login();
 $authorlogin = ob_get_contents();
 ob_end_clean();
 
-$postedbyhtml = "Posted by <a href=\"".get_bloginfo ('url')."/about/the-founders/".$authorlogin."/\">".$authorname."</a>";
-$googleplus = get_the_author_meta('jabber');
+$postedbyhtml = "Posted by <a rel=\"author\" href=\"".get_bloginfo ('url')."/about/the-founders/".$authorlogin."/\">".$authorname."</a>";
+/*$googleplus = get_the_author_meta('jabber');
 
 if (!empty($googleplus)) {
     $postedbyhtml .= ' <a href="'.$googleplus.'?rel=author">(Google+)</a>';
-}
+}*/
 ?>
                             <div id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item"><?php echo $postedbyhtml; ?></div>
                             <div id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"><?php echo strftime ('%e %B %Y', strtotime ($post->post_date)); ?></div>
