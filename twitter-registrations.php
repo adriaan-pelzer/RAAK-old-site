@@ -6,8 +6,8 @@ Template Name: Twitter Registrations
 ?>
 <?php get_header() ?>
 <?php
-if (has_posts()) {
-    while (has_posts()) {
+if (have_posts()) {
+    while (have_posts()) {
         the_post();
 ?>
 	<div id="container">
