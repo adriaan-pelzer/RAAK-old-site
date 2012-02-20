@@ -430,12 +430,12 @@ div#header {
 }
 
 .topmenu_body a {
-    padding-left: 10px!important;
+    /*padding-left: 10px!important;*/
     padding-right: 0px!important;
     font-size: 11px;
     letter-spacing: 1px;
     position: relative;
-    left: 1px;
+    /*left: 1px;*/
 }
 
 .error {
