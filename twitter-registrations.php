@@ -44,7 +44,7 @@ if (have_posts()) {
                     <div class="whitebox_big_body_nav">
                     </div><!-- whitebox_big_body_nav -->
                     <hr />
-                    <?php the_content(); ?>
+                    <?php echo $content; ?>
                 </div><!-- #whitebox_big_body -->
                 <div id="whitebox_big_bottom">
                 </div><!-- #whitebox_big_bottom -->
