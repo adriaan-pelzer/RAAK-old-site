@@ -774,3 +774,7 @@ fieldset div#mc-embedded-subscribe-container input#mc-embedded-subscribe {
     position: relative;
     top: 5px;
 }
+
+#header_bottom {
+    width: 1000px;
+}
