@@ -9,6 +9,29 @@ Template Name: Twitter Registrations
 if (have_posts()) {
     while (have_posts()) {
         the_post();
+
+        $maxid = 0;
+
+        if ($msql = mysql_connect("localhost", "twats_twats", "tW4Ts!")) {
+            if (mysql_select_db("twats_twats", $msql)) {
+                if ($resource = $msql->query("SELECT MAX(`id`) FROM `users`;", $msql)) {
+                    if ($row = mysql_fetch_array($resource)) {
+                        $maxid = $row[0];
+                    }
+                }
+            }
+        }
+
+        ob_start();
+        the_content();
+        $content = ob_get_contents();
+        ob_end_clean();
+
+        if ($maxid) {
+            $content = str_replace("[twitter_users]", "Twitter now has exactly ".$maxid." registered users.", $content);
+        } else {
+            $content = str_replace("[twitter_users]", "", $content);
+        }
 ?>
 	<div id="container">
         <div id="container_top"></div>
@@ -21,7 +44,7 @@ if (have_posts()) {
                     <div class="whitebox_big_body_nav">
                     </div><!-- whitebox_big_body_nav -->
                     <hr />
-<?php the_content(); ?>
+                    <?php the_content(); ?>
                 </div><!-- #whitebox_big_body -->
                 <div id="whitebox_big_bottom">
                 </div><!-- #whitebox_big_bottom -->
