@@ -26,12 +26,6 @@ if (have_posts()) {
         the_content();
         $content = ob_get_contents();
         ob_end_clean();
-
-        if ($maxid) {
-            $content = str_replace("[twitter_users]", "Twitter now has ".$maxid." registered users.", $content);
-        } else {
-            $content = str_replace("[twitter_users]", "", $content);
-        }
 ?>
 	<div id="container">
         <div id="container_top"></div>
@@ -40,7 +34,7 @@ if (have_posts()) {
                 <div id="whitebox_big_top">
                 </div><!-- #whitebox_big_top -->
                 <div id="whitebox_big_body">
-                <div id="whitebox_big_body_title"><?php the_title(); ?></div>
+                <div id="whitebox_big_body_title"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></div>
                     <div class="whitebox_big_body_nav">
                     </div><!-- whitebox_big_body_nav -->
                     <hr />
