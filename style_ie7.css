@@ -31,6 +31,7 @@
 
 #access {
     margin-left: 55px;                                  /*IE specific*/
+    margin-top: -23px;
 }
 
 
@@ -696,7 +697,7 @@ fieldset div#mc-embedded-subscribe-container input#mc-embedded-subscribe {
 }
 
 #menu {
-	width: 549px!important;
+	width: auto!important;
 }
 
 #logox_counter_body a {
