@@ -45,9 +45,9 @@ function patch_nofollow ($menu, $title) {
 function sandbox_globalnav() {
     global $wpdb;
 	$blogarchive_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'blog-archive'");
-	//$products_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'our-products'");
+	$home_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_title = 'Home'");
 
-	if ( $menu = str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0&depth=1&exclude='.$blogarchive_id/*.','.$products_id*/) ) ) {
+	if ( $menu = str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0&depth=1&exclude='.$blogarchive_id.','.$home_id) ) ) {
         $menu = str_replace ("<a", "<div class=\"topmenu_top\"></div><div class=\"topmenu_body\"><a", $menu);
         $menu = str_replace ("</a>", "</a></div>", $menu);
         foreach (array("About", "Our work", "Contact") as $title) {
