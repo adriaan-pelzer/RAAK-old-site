@@ -30,4 +30,8 @@ if (has_posts()) {
         <?php get_sidebar() ?>
         <div id="container_bottom"></div>
 	</div><!-- #container -->
+<?php
+    }
+}
+?>
 <?php get_footer() ?>
