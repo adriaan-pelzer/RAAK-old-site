@@ -14,7 +14,7 @@ if (have_posts()) {
 
         if ($msql = mysql_connect("localhost", "twats_twats", "tW4Ts!")) {
             if (mysql_select_db("twats_twats", $msql)) {
-                if ($resource = $msql->query("SELECT MAX(`id`) FROM `users`;", $msql)) {
+                if ($resource = mysql_query("SELECT MAX(`id`) FROM `users`;", $msql)) {
                     if ($row = mysql_fetch_array($resource)) {
                         $maxid = $row[0];
                     }
