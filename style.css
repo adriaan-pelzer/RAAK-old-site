@@ -367,6 +367,8 @@ div#header {
     vertical-align: -30%;
     /*margin-left: 68px;*/
     font: 10px din_schrift, arial_narrow, 'Arial Narrow', sans-serif;
+    float: right;
+    margin-right: 10px;
 }
 
 #access div#menu {
