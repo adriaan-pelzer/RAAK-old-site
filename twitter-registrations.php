@@ -28,7 +28,7 @@ if (have_posts()) {
         ob_end_clean();
 
         if ($maxid) {
-            $content = str_replace("[twitter_users]", "Twitter now has exactly ".$maxid." registered users.", $content);
+            $content = str_replace("[twitter_users]", "Twitter now has ".$maxid." registered users.", $content);
         } else {
             $content = str_replace("[twitter_users]", "", $content);
         }
