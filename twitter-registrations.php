@@ -3,6 +3,29 @@
 Template Name: Twitter Registrations
 */
 
+if (current_user_can('manage_options')) {
+    if (!empty($_REQUEST['screen_name'])) {
+        require_once (dirname(__FILE__)."/tmhOAuth.php");
+
+        $twitter = new tmhOAuth(array(
+            'consumer_key' => 'j3ipoBsLRTURQKsClTw1Q',
+            'consumer_secret' => 'c4zwwzhuTJNBWfRzEHKwHY8ESowH2Zb52e3SwjL3kM',
+            'user_token' => '169026281-8AagsypAkgOpKPyM5SA8MFTeosfYQ2lMyAEfIfDi',
+            'user_secret' => 'oPZgstaEPsQzul2q3d0CVOs096vXd30lMonG7w9c'
+        ));
+
+        $code = $twitter->request('GET', $twitter->url('1/users/lookup'), array('screen_name' => $_REQUEST['screen_name']));
+
+        if ($code == 200) {
+            $user = json_decode($twitter->response['response']);
+            echo "<pre>\n";
+            print_r($user);
+            echo "</pre>\n";
+        } else {
+            $error = "Cannot query twitter: code ".$code;
+        }
+    }
+}
 ?>
 <?php get_header() ?>
 <?php
