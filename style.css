@@ -2545,9 +2545,19 @@ body.four04 #whitebox_primary blockquote {
 
 /***************logo project intermediate***************/
 
-body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php .whitebox_primary_body_content p a {
+body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php a {
     color: #00aeef;
 }
+
+.page-template-about-php .whitebox_primary_body_nav  a {
+    color: #666666;
+}
+
+
+.page-template-about-php .active  a {
+    color: #00aeef;
+}
+
 
 
 .pageid-1894 #whitebox_big_body {
