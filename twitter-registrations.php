@@ -23,6 +23,7 @@ if (current_user_can('manage_options')) {
             echo "</pre>\n";
         } else {
             $error = "Cannot query twitter: code ".$code;
+            echo $error;
         }
     }
 }
