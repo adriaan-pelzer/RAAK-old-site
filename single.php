@@ -89,7 +89,7 @@ $twittername = str_replace ("http://twitter.com/", "", $twittername);
 
 if ($post->post_title == "Twitter will break through the 500 million user mark on Wednesday") {
 ?>
-                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="Twitter through 500 mil ceiling on Wed &#9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="Twitter through 500 mil ceiling on Wednesday &#9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <?php
 } else {
 ?>
