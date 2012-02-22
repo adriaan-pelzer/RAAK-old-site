@@ -114,7 +114,7 @@ if (have_posts()) {
             $html_to_replace .= '<input type="submit" name="submit_screen_name" value="See Yourself on the Graph" />';
             $html_to_replace .= '</form>';
             $html_to_replace .= '</p>';
-            $html_to_replace .= '<p class="error"><em>This doesn\'t work in IE 6, 7 and 8</em></p>';
+            $html_to_replace .= '<p><em>This doesn\'t work in IE 6, 7 and 8</em></p>';
             $html_to_replace .= '</div>';
 
             $content = str_replace("[see_yourself]", $html_to_replace, $content);
