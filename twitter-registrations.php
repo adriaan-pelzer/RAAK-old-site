@@ -178,7 +178,6 @@ if (have_posts()) {
         var imgalt = $('#whitebox_big_body img').attr('alt');
         var imgsrc = $('#whitebox_big_body img').attr('src');
         var ctx;
-        var ie_vsn = getInternetExplorerVersion();
 
         graph.src = imgsrc;
 
@@ -222,7 +221,6 @@ if (have_posts()) {
         var imgalt = $('#whitebox_big_body img').attr('alt');
         var imgsrc = $('#whitebox_big_body img').attr('src');
         var ctx;
-        var ie_vsn = getInternetExplorerVersion();
         var graphsize = $('#graph').length;
 
         graph.src = imgsrc;
