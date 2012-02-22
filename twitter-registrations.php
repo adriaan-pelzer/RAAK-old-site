@@ -140,24 +140,25 @@ if (have_posts()) {
         <div id="container_bottom"></div>
 	</div><!-- #container -->
 <?php
-        if ($twitter_status == TwitterState::RESP) {
-            $text_size = 15;
-            $width = 1700;
-            $height = 1200;
-            $margintop = 50;
-            $marginbottom = 50;
-            $marginleft = 150;
-            $marginright = 50;
+        $text_size = 15;
+        $width = 1700;
+        $height = 1200;
+        $margintop = 50;
+        $marginbottom = 50;
+        $marginleft = 150;
+        $marginright = 50;
 
-            $nwidth = 740;
-            $nheight = 522;
-            $wratio = $nwidth/$width;
-            $hratio = $nheight/$height;
-            $ntext_size = $text_size * $hratio;
-            $nmargintop = $margintop * $hratio;
-            $nmarginbottom = $marginbottom * $hratio;
-            $nmarginleft = $marginleft * $wratio;
-            $nmarginright = $marginright * $wratio;
+        $nwidth = 740;
+        $nheight = 522;
+        $wratio = $nwidth/$width;
+        $hratio = $nheight/$height;
+        $ntext_size = $text_size * $hratio;
+        $nmargintop = $margintop * $hratio;
+        $nmarginbottom = $marginbottom * $hratio;
+        $nmarginleft = $marginleft * $wratio;
+        $nmarginright = $marginright * $wratio;
+
+        if ($twitter_status == TwitterState::RESP) {
             $usery = $nheight - $nmarginbottom - (($user[0]->id - $minid)/($maxid - $minid))*($nheight - $nmarginbottom - $nmargintop);
             $userx = $nmarginleft + ((strtotime($user[0]->created_at) - $mintime)/($maxtime - $mintime))*($nwidth - $nmarginright - $nmarginleft);
 ?>
