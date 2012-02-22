@@ -2,42 +2,6 @@
 require_once 'Browser.php';
 
 $browser = new Browser ();
-$ie678 = false;
-
-/*switch ($browser->getPlatform()) {
-case Browser::PLATFORM_IPHONE:
-case Browser::PLATFORM_IPOD:
-case Browser::PLATFORM_BLACKBERRY:
-case Browser::PLATFORM_NOKIA:
-case Browser::PLATFORM_ANDROID:
-    if (!(isset ($_SESSION['desktop_on_mobile']))) {
-        header ("Location: http://m.nirvana.raak.it");
-        die();
-    }
-    break;
-}*/
-
-function is_ie678(){
-    $browser = new Browser ();
-
-    switch ($browser->getBrowser()) {
-    case Browser::BROWSER_IE:
-        if ($browser->getVersion() >= 9) {
-            return FALSE;
-        } else if ($browser->getVersion() >= 8) {
-            return TRUE;
-        } else if ($browser->getVersion() >= 7) {
-            return TRUE;
-        } else if ($browser->getVersion() >= 6) {
-            return TRUE;
-        } else {
-            return TRUE;
-        }
-        break;
-    default:
-        return FALSE;
-    }
-}
 
 function browser_specific_stylesheet(){
     $browser = new Browser ();

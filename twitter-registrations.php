@@ -2,6 +2,30 @@
 /*
 Template Name: Twitter Registrations
 */
+require_once 'Browser.php';
+
+function is_ie678(){
+    $browser = new Browser ();
+
+    switch ($browser->getBrowser()) {
+    case Browser::BROWSER_IE:
+        if ($browser->getVersion() >= 9) {
+            return FALSE;
+        } else if ($browser->getVersion() >= 8) {
+            return TRUE;
+        } else if ($browser->getVersion() >= 7) {
+            return TRUE;
+        } else if ($browser->getVersion() >= 6) {
+            return TRUE;
+        } else {
+            return TRUE;
+        }
+        break;
+    default:
+        return FALSE;
+    }
+}
+
 class TwitterState {
     const START = 0;
     const INIT = 1;
@@ -12,7 +36,7 @@ class TwitterState {
 
 $twitter_status = TwitterState::START;
 
-if (0) {
+if (is_ie678()) {
     $enable_see_yourself = false;
 } else {
     $enable_see_yourself = true;
@@ -61,7 +85,7 @@ if ($enable_see_yourself && !empty($_REQUEST['screen_name'])) {
 ?>
 <?php get_header() ?>
 <?php
-//echo "<!--".is_ie678()."-->\n";
+echo "<!--".is_ie678()."-->\n";
 
 if (have_posts()) {
     while (have_posts()) {
@@ -114,12 +138,11 @@ if (have_posts()) {
             $html_to_replace .= '<input type="submit" name="submit_screen_name" value="See Yourself on the Graph" />';
             $html_to_replace .= '</form>';
             $html_to_replace .= '</p>';
-            $html_to_replace .= '<p><em>This doesn\'t work in IE 6, 7 and 8</em></p>';
             $html_to_replace .= '</div>';
 
             $content = str_replace("[see_yourself]", $html_to_replace, $content);
         } else {
-            if (1) {
+            if (is_ie678()) {
                 $content = str_replace("[see_yourself]", '<p class="error">You are using Internet Explorer. Even worse, you\'re using Internet Explorer 8 or below. If you want to be able to view the content below properly, and see yourself on the graph, please download a real browser. <a href="http://google.co.uk/chrome">Google Chrome</a> is a good choice.</p>', $content);
             } else {
                 $content = str_replace("[see_yourself]", "", $content);
@@ -203,7 +226,7 @@ if (have_posts()) {
             addUser(ctx, "#0b0", <?php echo $userx; ?>, <?php echo $usery; ?>, '#000', '<?php echo $_REQUEST['screen_name']; ?>');
             addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
             addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
-            addUser(ctx, "#00b", 366.9, 482.0, '#777', 'aplusk');
+            addUser(ctx, "#00b", 339.9, 484.1, '#777', 'dailymirror');
             addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
             addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
         });
@@ -246,7 +269,7 @@ if (have_posts()) {
 
             addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
             addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
-            addUser(ctx, "#00b", 366.9, 482.0, '#777', 'aplusk');
+            addUser(ctx, "#00b", 339.9, 484.1, '#777', 'dailymirror');
             addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
             addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
         });
