@@ -12,7 +12,7 @@ class TwitterState {
 
 $twitter_status = TwitterState::START;
 
-if (current_user_can('manage_options') && !$ie678) {
+if (!$ie678) {
     $enable_see_yourself = true;
 } else {
     $enable_see_yourself = false;
@@ -116,7 +116,13 @@ if (have_posts()) {
 
             $content = str_replace("[see_yourself]", $html_to_replace, $content);
         } else {
-            $content = str_replace("[see_yourself]", "", $content);
+            echo "<!--".$ie678."-->\n";
+
+            if ($ie678) {
+                $content = str_replace("[see_yourself]", '<p class="error">You are using Internet Explorer. Even worse, you\'re using Internet Explorer 8 or below. If you want to be able to view the content below properly, and see yourself on the graph, please download a real browser. <a href="http://google.co.uk/chrome">Google Chrome</a> is a good choice.</p>', $content);
+            } else {
+                $content = str_replace("[see_yourself]", "", $content);
+            }
         }
 ?>
 	<div id="container">
@@ -224,8 +230,6 @@ if (have_posts()) {
         var graphsize = $('#graph').length;
 
         graph.src = imgsrc;
-
-        console.log(ie_vsn);
 
         $(graph).load(function () {
             if (graphsize > 0) {
