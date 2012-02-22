@@ -2,6 +2,7 @@
 require_once 'Browser.php';
 
 $browser = new Browser ();
+$ie678 = false;
 
 /*switch ($browser->getPlatform()) {
 case Browser::PLATFORM_IPHONE:
@@ -38,12 +39,16 @@ function browser_specific_stylesheet(){
         if ($browser->getVersion() >= 9) {
             $stylesheet = 'style_ie9.css';
         } else if ($browser->getVersion() >= 8) {
+            $ie678 = true;
             $stylesheet = 'style_ie8.css';
         } else if ($browser->getVersion() >= 7) {
+            $ie678 = true;
             $stylesheet = 'style_ie7.css';
         } else if ($browser->getVersion() >= 6) {
+            $ie678 = true;
             $stylesheet = 'style_ie7.css'; /*!!*/
         } else {
+            $ie678 = true;
             $found = FALSE;
         }
         break;

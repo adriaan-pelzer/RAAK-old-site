@@ -163,19 +163,6 @@ if (have_posts()) {
             $userx = $nmarginleft + ((strtotime($user[0]->created_at) - $mintime)/($maxtime - $mintime))*($nwidth - $nmarginright - $nmarginleft);
 ?>
     <script>
-    function getInternetExplorerVersion() {
-        var rv = -1;
-
-        if (navigator.appName == 'Microsoft Internet Explorer') {
-            var ua = navigator.userAgent;
-            var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-            if (re.exec(ua) != null)
-                rv = parseFloat( RegExp.$1 );
-        }
-
-        return rv;
-    }
-
     var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
         ctx.fillStyle = color;
         ctx.fillRect(x - 2, y - 2, 4, 4);
@@ -195,48 +182,31 @@ if (have_posts()) {
 
         graph.src = imgsrc;
 
-        if ((ie_vsn === -1) || (ie_vsn >= 9)) {
-            $(graph).load(function () {
-                if ($('#graph').length > 0) {
-                    ctx = document.getElementById('graph').getContext('2d');
-                    ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
-                } else {
-                    $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+        $(graph).load(function () {
+            if ($('#graph').length > 0) {
+                ctx = document.getElementById('graph').getContext('2d');
+                ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+            } else {
                 $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-                    ctx = document.getElementById('graph').getContext('2d');
-                }
+            $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                ctx = document.getElementById('graph').getContext('2d');
+            }
 
-                ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+            ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
 
-                addUser(ctx, "#0b0", <?php echo $userx; ?>, <?php echo $usery; ?>, '#000', '<?php echo $_REQUEST['screen_name']; ?>');
-                addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
-                addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
-                addUser(ctx, "#00b", 366.9, 482.0, '#777', 'aplusk');
-                addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
-                addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
-            });
-        } else {
-            $('#see_yourself_form').html('<p class="error">It seems you are using Internet Explorer 7 or 8. Unfortunately you\'ll need a real browser to see yourself on the graph below. Try <a href="http://www.google.co.uk/chrome">Google Chrome</a>.</p>');
-        }
+            addUser(ctx, "#0b0", <?php echo $userx; ?>, <?php echo $usery; ?>, '#000', '<?php echo $_REQUEST['screen_name']; ?>');
+            addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
+            addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
+            addUser(ctx, "#00b", 366.9, 482.0, '#777', 'aplusk');
+            addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
+            addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
+        });
     });
     </script>
 <?php
         } else {
 ?>
     <script>
-    function getInternetExplorerVersion() {
-        var rv = -1;
-
-        if (navigator.appName == 'Microsoft Internet Explorer') {
-            var ua = navigator.userAgent;
-            var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-            if (re.exec(ua) != null)
-                rv = parseFloat( RegExp.$1 );
-        }
-
-        return rv;
-    }
-
     var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
         ctx.fillStyle = color;
         ctx.fillRect(x - 2, y - 2, 4, 4);
@@ -253,31 +223,30 @@ if (have_posts()) {
         var imgsrc = $('#whitebox_big_body img').attr('src');
         var ctx;
         var ie_vsn = getInternetExplorerVersion();
+        var graphsize = $('#graph').length;
 
         graph.src = imgsrc;
 
-        if ((ie_vsn === -1) || (ie_vsn >= 9)) {
-            $(graph).load(function () {
-                if ($('#graph').length > 0) {
-                    ctx = document.getElementById('graph').getContext('2d');
-                    ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
-                } else {
-                    $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+        console.log(ie_vsn);
+
+        $(graph).load(function () {
+            if (graphsize > 0) {
+                ctx = document.getElementById('graph').getContext('2d');
+                ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+            } else {
                 $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-                    ctx = document.getElementById('graph').getContext('2d');
-                }
+            $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                ctx = document.getElementById('graph').getContext('2d');
+            }
 
-                ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+            ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
 
-                addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
-                addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
-                addUser(ctx, "#00b", 366.9, 482.0, '#777', 'aplusk');
-                addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
-                addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
-            });
-        } else {
-            $('#see_yourself_form').html('<p class="error">It seems you are using Internet Explorer 7 or 8. Unfortunately you\'ll need a real browser to see yourself on the graph below. Try <a href="http://www.google.co.uk/chrome">Google Chrome</a>.</p>');
-        }
+            addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
+            addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
+            addUser(ctx, "#00b", 366.9, 482.0, '#777', 'aplusk');
+            addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
+            addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
+        });
     });
     </script>
 <?php
