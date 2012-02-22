@@ -9,3 +9,8 @@ fieldset {
 .whitebox_primary_body_content pre {
     white-space: pre-wrap;
 }
+
+
+#footer_copyright {
+    margin-right: 399px;
+}
