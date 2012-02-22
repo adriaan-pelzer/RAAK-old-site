@@ -223,6 +223,28 @@ if (have_posts()) {
         } else {
 ?>
     <script>
+    function getInternetExplorerVersion() {
+        var rv = -1;
+
+        if (navigator.appName == 'Microsoft Internet Explorer') {
+            var ua = navigator.userAgent;
+            var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(ua) != null)
+                rv = parseFloat( RegExp.$1 );
+        }
+
+        return rv;
+    }
+
+    var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
+        ctx.fillStyle = color;
+        ctx.fillRect(x - 2, y - 2, 4, 4);
+        ctx.fillStyle = txtcolor;
+        ctx.textBaseline = 'bottom';
+        ctx.textAlign = 'right';
+        ctx.fillText(screen_name, x, y);
+    };
+
     $(document).ready(function() {
         var graph = new Image();
         var imgttl = $('#whitebox_big_body img').attr('title');
