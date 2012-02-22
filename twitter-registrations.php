@@ -12,10 +12,10 @@ class TwitterState {
 
 $twitter_status = TwitterState::START;
 
-if (!$ie678) {
-    $enable_see_yourself = true;
-} else {
+if (0) {
     $enable_see_yourself = false;
+} else {
+    $enable_see_yourself = true;
 }
 
 if ($enable_see_yourself && !empty($_REQUEST['screen_name'])) {
@@ -61,6 +61,8 @@ if ($enable_see_yourself && !empty($_REQUEST['screen_name'])) {
 ?>
 <?php get_header() ?>
 <?php
+//echo "<!--".is_ie678()."-->\n";
+
 if (have_posts()) {
     while (have_posts()) {
         the_post();
@@ -112,13 +114,12 @@ if (have_posts()) {
             $html_to_replace .= '<input type="submit" name="submit_screen_name" value="See Yourself on the Graph" />';
             $html_to_replace .= '</form>';
             $html_to_replace .= '</p>';
+            $html_to_replace .= '<p class="error"><em>This doesn\'t work in IE 6, 7 and 8</em></p>';
             $html_to_replace .= '</div>';
 
             $content = str_replace("[see_yourself]", $html_to_replace, $content);
         } else {
-            echo "<!--".$ie678."-->\n";
-
-            if ($ie678) {
+            if (1) {
                 $content = str_replace("[see_yourself]", '<p class="error">You are using Internet Explorer. Even worse, you\'re using Internet Explorer 8 or below. If you want to be able to view the content below properly, and see yourself on the graph, please download a real browser. <a href="http://google.co.uk/chrome">Google Chrome</a> is a good choice.</p>', $content);
             } else {
                 $content = str_replace("[see_yourself]", "", $content);
