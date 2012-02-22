@@ -12,7 +12,7 @@ class TwitterState {
 
 $twitter_status = TwitterState::START;
 
-if (current_user_can('manage_options')) {
+if (current_user_can('manage_options') && !$ie678) {
     $enable_see_yourself = true;
 } else {
     $enable_see_yourself = false;
