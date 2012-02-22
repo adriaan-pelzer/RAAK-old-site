@@ -75,7 +75,7 @@ div#twtr-widget-1 div.twtr-doc div.twtr-bd div.twtr-timeline div.twtr-tweets div
 }
 
 #footer_copyright {
-    margin-right: 399px;
+    margin-right: 398px!important;
 }
 
 /*.whitebox_primary_body_content_nav {
@@ -262,4 +262,19 @@ body.four04 #whitebox_big_body_search a {
 
 #bluebox_body_thumbpic {
     margin-top: 4px;
+}
+
+#see_yourself_form input[type="text"] {
+    padding: 1px;
+    border: 1px solid #000000;
+}
+
+
+#see_yourself_form input[type="submit"] {
+    padding: 1px;
+    background: #ece9d8;
+    border-bottom: 2px solid #716f64;
+    border-right: 2px solid #716f64;
+    border-top: 2px solid #aca899;
+    border-left: 2px solid #aca899;
 }

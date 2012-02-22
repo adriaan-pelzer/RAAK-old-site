@@ -1205,7 +1205,7 @@ div.twtr-widget-profile div.twtr-doc div.twtr-hd h4 {
 }
 
 .footer_link, .footer_link a {
-    color: #b9e5fb;
+    color: #b9e5fb!important;
 }
 
 /************About Page************/
@@ -2545,7 +2545,7 @@ body.four04 #whitebox_primary blockquote {
 
 /***************logo project intermediate***************/
 
-body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php a {
+body.page-template-twitter-registrations-php #whitebox_big_body a, body.pageid-1894 .whitebox_primary_body_content a, body.page-template-about-php a {
     color: #00aeef;
 }
 
