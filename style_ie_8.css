@@ -3,7 +3,7 @@
 }
 
 #footer_copyright {
-    margin-right: 429px;                    
+    margin-right: 428px;                    
 }
 
 body.page-template-home-php #bluebox {
@@ -42,4 +42,9 @@ div#twitter_wessel #twitter_body .twtr-widget-profile h3, div#twitter_gerrie #tw
 #mc_embed_signup legend {
     position: static!important;
     margin-top: -14px;
+}
+
+#see_yourself_form input {
+    padding: 1px;
+    border: 1px solid #000000;
 }
