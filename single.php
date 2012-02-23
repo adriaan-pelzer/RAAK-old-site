@@ -118,7 +118,36 @@ endif;
                         </div><!-- .whitebox_primary_body_share -->
                         <hr class="solid" />
                         <div class="whitebox_primary_body_content">
-                            <?php the_content(); ?>
+<?php
+ob_start();
+the_content();
+$content = ob_get_contents();
+ob_end_clean();
+
+$twitter_list = "<script charset=\"utf-8\" src=\"http://widgets.twimg.com/j/2/widget.js\"></script>
+    <script>
+    new TWTR.Widget({ version: 2, type: 'list', rpp: 30, interval: 30000, title: 'The 500 millionth Twitter User', subject: 'Piotr Janicki', width: 255, height: 0, theme: {
+        shell: {
+            background: '0',
+            color: '0'
+        },
+        tweets: {
+            background: '100',
+            color: '100',
+            links: 'ff0000'
+        }
+    },
+    features: {
+        scrollbar: true,
+        loop: false,
+        live: true,
+        behavior: 'all'
+    }}).render().setList('adriaan_pelzer', 'janickipiotr').start();
+</script>";
+
+$content = str_replace ("[twitter_list]", $twitter_list, $content);
+echo $content;
+?>
                         </div><!-- .whitebox_primary_body_content -->
                         <div class="whitebox_primary_body_flwbtn">
                             <p><span><em><?php echo $postedbyhtml; ?></em></span><span><a href="<?php echo get_post_meta ($authorpage->ID, 'twitter', true); ?>" class="twitter-follow-button" data-show-count="true">Follow @<?php echo $twittername; ?></a></span></p>
