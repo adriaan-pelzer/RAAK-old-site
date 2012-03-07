@@ -248,9 +248,9 @@ new TWTR.Widget({
             <div id="twitter_bottom"></div>
         </div><!-- twitter -->
         <div id="twitter_gerrie"<?php if ($post->post_title != "Gerrie Smits") { echo " style=\"display: none\""; } ?>>
-            <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/grrRAAK">grrRAAK</a></div>
+            <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/gerriesmits">gerriesmits</a></div>
             <div id="twitter_body">
-            <div id="twitter_follow"><a href="http://twitter.com/grrRAAK" class="twitter-follow-button" data-show-count="false">Follow @grrRAAK</a></div>
+            <div id="twitter_follow"><a href="http://twitter.com/gerriesmits" class="twitter-follow-button" data-show-count="false">Follow @gerriesmits</a></div>
             <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
             <script>
@@ -281,7 +281,7 @@ new TWTR.Widget({
     avatars: false,
     behavior: 'all'
   }
-}).render().setUser('grrRAAK').start();
+}).render().setUser('gerriesmits').start();
             </script>
             </div>
             <div id="twitter_bottom"></div>

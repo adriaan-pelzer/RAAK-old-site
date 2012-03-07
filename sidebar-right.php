@@ -14,7 +14,7 @@
 if ($title == "The outsourced and in-house Social Media administrator") {
     $twitter = "RAAKonteurs";
 } else if ($title == "Gerrie Smits") {
-    $twitter = "grrRAAK";
+    $twitter = "gerriesmits";
 } else if ($title == "Wessel van Rensburg") {
     $twitter = "wildebees";
 } else if ($title == "Adriaan Pelzer") {
@@ -231,11 +231,11 @@ function mce_success_cb(resp){
 <div class="twitter_div" >
 <h3 class="sidebar-title">Gerrie's Tweets</h3>
 <ul id="twitter_update_list3"></ul>
-<a href="http://twitter.com/grrRAAK" id="twitter-link" style="display:block;text-align:left;   border-top: 0px solid #ccc;   font-weight: bold; padding-right: 30px;">follow Gerrie on Twitter</a>
+<a href="http://twitter.com/gerriesmits" id="twitter-link" style="display:block;text-align:left;   border-top: 0px solid #ccc;   font-weight: bold; padding-right: 30px;">follow Gerrie on Twitter</a>
 </div>
 
 <script type="text/javascript" src="<?php bloginfo('url') ?>/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/grrRAAK.json?callback=twitterCallback3&amp;count=2"></script-->
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/gerriesmits.json?callback=twitterCallback3&amp;count=2"></script-->
 
 
 
