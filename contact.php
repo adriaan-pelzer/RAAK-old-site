@@ -36,7 +36,7 @@ include ('local_functions.php');
                     <hr />
                     <div id="bluebox_body_map">
                     <a target="_blank" href="<?php echo get_post_meta ($post->ID, 'googlemaplink', true); ?>">
-                    <!--a target="_blank" href="http://maps.google.com/maps?hl=en&q=<?php echo get_post_meta ($post->ID, 'latitude', true); ?>,<?php echo get_post_meta ($post->ID, 'longitude', true); ?>&ie=UTF8&z=14"--><!--img id="gimg" src="http://maps.google.com/maps/api/staticmap?center=<?php echo get_post_meta ($post->ID, 'latitude', true); ?>,<?php echo get_post_meta ($post->ID, 'longitude', true); ?>&zoom=14&size=315x315&sensor=false" /--><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map.png" />
+                    <!--a target="_blank" href="http://maps.google.com/maps?hl=en&q=<?php echo get_post_meta ($post->ID, 'latitude', true); ?>,<?php echo get_post_meta ($post->ID, 'longitude', true); ?>&ie=UTF8&z=14"--><!--img id="gimg" src="http://maps.google.com/maps/api/staticmap?center=<?php echo get_post_meta ($post->ID, 'latitude', true); ?>,<?php echo get_post_meta ($post->ID, 'longitude', true); ?>&zoom=14&size=315x315&sensor=false" /--><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map2.png" />
                     </a>
                     </div>
                 </div><!-- bluebox_body -->
